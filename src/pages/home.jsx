@@ -12,19 +12,50 @@ const Home = () => {
     const sectionRefs = useRef([]);
     const whyChoosePillars = [
         {
-            title: 'TAILORED FINANCIAL ARCHITECTURES',
+            title: 'Tailored Financial Architectures',
             desc: "We construct personalized financial frameworks suited to your specific business landscape. Our services are like finely tuned instruments, crafted to harmonize with your company's rhythm.",
             icon: 'fa-file-invoice-dollar'
         },
         {
-            title: 'SUSTAINABLE GROWTH PLANNING',
+            title: 'Sustainable Growth Planning',
             desc: "Our financial planning isn't just about the present; it's about paving a path for sustainable growth. Zen Tax strategic planning services help you forecast future scenarios, prepare for potential challenges, and capitalize on opportunities for expansion.",
             icon: 'fa-chart-line'
         },
         {
-            title: 'DEDICATED ADVISORY PARTNERSHIP',
+            title: 'Dedicated Advisory Partnership',
             desc: "Zn Tax believes in building a partnership that goes beyond the numbers. Our team becomes an extension of yours, offering dedicated support, advice, and financial mentorship. We invest in your success as if it were our own.",
             icon: 'fa-handshake'
+        }
+    ];
+
+    const leadershipCards = [
+        {
+            name: 'Zulqarnain Nasir',
+            title: 'Principal Accountant, CEO',
+            focus: 'Partner',
+            bio: 'Zulqarnain leads ZN Tax and Accounting Services Professional Corporation with a commitment to integrity and strategic excellence. He specializes in complex tax planning for SMEs and professional corporations of doctors and dentists.',
+            image: zulqarnainImage,
+            imageAlt: 'Zulqarnain Nasir',
+            expertise: [
+                { icon: 'fa-chart-line', label: 'Tax Strategy' },
+                { icon: 'fa-sliders', label: 'Financial Control' },
+                { icon: 'fa-compass-drafting', label: 'Strategic Planning' },
+                { icon: 'fa-users-gear', label: 'Consulting' }
+            ]
+        },
+        {
+            name: 'Usman Yousaf',
+            title: 'Compliance and Financial Control Manager',
+            focus: 'Manager',
+            bio: 'Usman is a senior financial professional with extensive experience in banking, treasury management, and accounting. He works closely with businesses to deliver trusted advisory, audit, and accounting services tailored to their specific needs.',
+            avatarIcon: 'fa-user-tie',
+            imageAlt: 'Usman Yousaf',
+            expertise: [
+                { icon: 'fa-money-bill-trend-up', label: 'Cash Flow Management' },
+                { icon: 'fa-sliders', label: 'Financial Control' },
+                { icon: 'fa-shield-halved', label: 'Compliance' },
+                { icon: 'fa-compass-drafting', label: 'Strategy Planning' }
+            ]
         }
     ];
 
@@ -212,107 +243,43 @@ const Home = () => {
             <div className="manager-section">
                 <div className="leadership-shape"></div>
                 <div className="container">
-                    <div className="text-center" style={{ marginBottom: '0px', position: 'relative', zIndex: 1 }}>
-                        <h2 className="wp-block-heading" style={{ fontSize: '28px', fontWeight: '400', color: '#000', marginTop: '0', marginBottom: '10px' }}>Our Leadership</h2>
+                    <div className="text-center leadership-section-heading" style={{ marginBottom: '24px', position: 'relative', zIndex: 1 }}>
+                        <h2 className="wp-block-heading" style={{ fontSize: '28px', fontWeight: '400', color: '#000', marginTop: '0', marginBottom: '8px' }}>Our Leadership</h2>
                     </div>
 
-                    <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
-                        <div className="leadership-layout-shell" style={{ display: 'flex', alignItems: 'stretch', justifyContent: 'space-between', gap: '16px', width: '100%', maxWidth: '1020px' }}>
-                            <div className="leadership-photo-outside" style={{ flex: '0 0 220px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start' }}>
-                                <div className="manager-image-wrapper" style={{ width: '220px', height: '220px', borderRadius: '50%', margin: '0 auto', boxShadow: '0 4px 12px rgba(0,0,0,0.08)', backgroundColor: '#0F1925', overflow: 'hidden' }}>
-                                    <img src={zulqarnainImage} alt="Zulqarnain Nasir" style={{ width: '100%', height: '100%', minHeight: '100%', objectFit: 'cover' }} />
-                                </div>
-                                <div className="leadership-photo-caption" style={{ marginTop: '8px', fontSize: '16px', fontWeight: '700', color: '#0F1925', textAlign: 'center' }}>
-                                    Zulqarnain Nasir
-                                </div>
-                            </div>
-
-                            <div
-                                className="profile-card-minimal leadership-info-card"
-                                ref={el => profileRefs.current[0] = el}
-                                style={{ flex: '0 1 62%', maxWidth: '62%', marginLeft: 'auto', padding: '18px 22px' }}
+                    <div className="leadership-stack">
+                        {leadershipCards.map((person, index) => (
+                            <article
+                                key={person.name}
+                                className={`leadership-card ${index % 2 === 1 ? 'leadership-card--reverse' : ''}`}
+                                ref={el => profileRefs.current[index] = el}
                             >
-                                <div className="leadership-card-top" style={{ textAlign: 'center', marginBottom: '8px' }}>
-                                    <span className="title" style={{ fontSize: '13px', color: '#666', textTransform: 'uppercase', letterSpacing: '1.4px', fontWeight: '700' }}>Principal Accountant, CEO & Partner</span>
-                                </div>
-                                <div className="leadership-text-container" style={{ textAlign: 'center', maxWidth: '700px', minHeight: '160px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                                    <div className="manager-bio" style={{ textAlign: 'center' }}>
-                                        <p style={{ fontSize: '13px', lineHeight: '1.7', color: '#555', margin: '0' }}>
-                                            Zulqarnain leads ZN Tax and Accounting Services Professional Corporation with a commitment to integrity and strategic excellence. He specializes in Tax Perp and complex tax planning for SMEs and professional corporations of doctors and dentists.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="expertise-grid" style={{ paddingTop: '10px', marginTop: '10px', borderTop: '1px solid rgba(0,0,0,0.06)', display: 'grid', gridTemplateColumns: 'repeat(4, minmax(120px, 1fr))', gap: '10px' }}>
-                                    <div className="expertise-item" style={{ padding: '12px 14px', backgroundColor: '#f0f2f5', borderRadius: '14px', border: '1px solid transparent' }}>
-                                        <i className="fa-solid fa-chart-line" style={{ color: '#0F1925', marginBottom: '6px', fontSize: '19px' }}></i>
-                                        <span style={{ fontWeight: '700', fontSize: '12px', color: '#333' }}>Tax Strategy</span>
-                                    </div>
-                                    <div className="expertise-item" style={{ padding: '12px 14px', backgroundColor: '#f0f2f5', borderRadius: '14px', border: '1px solid transparent' }}>
-                                        <i className="fa-solid fa-sliders" style={{ color: '#0F1925', marginBottom: '6px', fontSize: '19px' }}></i>
-                                        <span style={{ fontWeight: '700', fontSize: '12px', color: '#333' }}>Financial Control</span>
-                                    </div>
-                                    <div className="expertise-item" style={{ padding: '12px 14px', backgroundColor: '#f0f2f5', borderRadius: '14px', border: '1px solid transparent' }}>
-                                        <i className="fa-solid fa-compass-drafting" style={{ color: '#0F1925', marginBottom: '6px', fontSize: '19px' }}></i>
-                                        <span style={{ fontWeight: '700', fontSize: '12px', color: '#333' }}>Strategic Planning</span>
-                                    </div>
-                                    <div className="expertise-item" style={{ padding: '12px 14px', backgroundColor: '#f0f2f5', borderRadius: '14px', border: '1px solid transparent' }}>
-                                        <i className="fa-solid fa-users-gear" style={{ color: '#0F1925', marginBottom: '6px', fontSize: '19px' }}></i>
-                                        <span style={{ fontWeight: '700', fontSize: '12px', color: '#333' }}>Consulting</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="leadership-layout-shell" style={{ display: 'flex', alignItems: 'stretch', justifyContent: 'space-between', gap: '16px', width: '100%', maxWidth: '1020px' }}>
-                            <div className="leadership-photo-outside" style={{ flex: '0 0 220px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start' }}>
-                                <div className="manager-image-wrapper" style={{ width: '220px', height: '220px', borderRadius: '50%', margin: '0 auto', boxShadow: '0 4px 12px rgba(0,0,0,0.08)', backgroundColor: '#0F1925', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                    <i className="fa-solid fa-user-tie" style={{ color: '#ffffff', fontSize: '92px' }}></i>
-                                </div>
-                                <div className="leadership-photo-caption" style={{ marginTop: '8px', fontSize: '16px', fontWeight: '700', color: '#0F1925', textAlign: 'center' }}>
-                                    Usman Yousaf
-                                </div>
-                            </div>
-
-                            <div
-                                className="profile-card-minimal leadership-info-card"
-                                ref={el => profileRefs.current[1] = el}
-                                style={{ flex: '0 1 62%', maxWidth: '62%', marginLeft: 'auto', padding: '18px 22px' }}
-                            >
-                                <div className="leadership-card-top" style={{ textAlign: 'center', marginBottom: '8px' }}>
-                                    <span className="title" style={{ fontSize: '13px', color: '#666', textTransform: 'uppercase', letterSpacing: '1.4px', fontWeight: '700' }}>Manager</span>
-                                </div>
-                                <div className="leadership-text-container" style={{ textAlign: 'center', maxWidth: '700px', minHeight: '160px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                                    <p className="leadership-location" style={{ color: '#FF8C42', fontWeight: '700', fontSize: '16px', margin: '0', marginBottom: '8px' }}>
-                                        Compliance and Financial Control
-                                    </p>
-                                    <div className="manager-bio" style={{ textAlign: 'center' }}>
-                                        <p style={{ fontSize: '13px', lineHeight: '1.7', color: '#555', margin: '0' }}>
-                                            Usman is a senior financial professional with extensive experience in banking, treasury management, and accounting. He works closely with businesses to deliver trusted advisory, audit, and accounting services tailored to their specific needs.
-                                        </p>
-                                    </div>
+                                <div className="leadership-card-avatar">
+                                    {person.image ? (
+                                        <img src={person.image} alt={person.imageAlt} />
+                                    ) : (
+                                        <span className="leadership-card-avatar-icon" aria-hidden="true">
+                                            <i className={`fa-solid ${person.avatarIcon || 'fa-user'}`}></i>
+                                        </span>
+                                    )}
                                 </div>
 
-                                <div className="expertise-grid" style={{ paddingTop: '10px', marginTop: '10px', borderTop: '1px solid rgba(0,0,0,0.06)', display: 'grid', gridTemplateColumns: 'repeat(4, minmax(120px, 1fr))', gap: '10px' }}>
-                                    <div className="expertise-item" style={{ padding: '12px 14px', backgroundColor: '#f0f2f5', borderRadius: '14px', border: '1px solid transparent' }}>
-                                        <i className="fa-solid fa-money-bill-trend-up" style={{ color: '#0F1925', marginBottom: '6px', fontSize: '19px' }}></i>
-                                        <span style={{ fontWeight: '700', fontSize: '12px', color: '#333' }}>Cash Flow Management</span>
-                                    </div>
-                                    <div className="expertise-item" style={{ padding: '12px 14px', backgroundColor: '#f0f2f5', borderRadius: '14px', border: '1px solid transparent' }}>
-                                        <i className="fa-solid fa-sliders" style={{ color: '#0F1925', marginBottom: '6px', fontSize: '19px' }}></i>
-                                        <span style={{ fontWeight: '700', fontSize: '12px', color: '#333' }}>Financial Control</span>
-                                    </div>
-                                    <div className="expertise-item" style={{ padding: '12px 14px', backgroundColor: '#f0f2f5', borderRadius: '14px', border: '1px solid transparent' }}>
-                                        <i className="fa-solid fa-shield-halved" style={{ color: '#0F1925', marginBottom: '6px', fontSize: '19px' }}></i>
-                                        <span style={{ fontWeight: '700', fontSize: '12px', color: '#333' }}>Compliance</span>
-                                    </div>
-                                    <div className="expertise-item" style={{ padding: '12px 14px', backgroundColor: '#f0f2f5', borderRadius: '14px', border: '1px solid transparent' }}>
-                                        <i className="fa-solid fa-compass-drafting" style={{ color: '#0F1925', marginBottom: '6px', fontSize: '19px' }}></i>
-                                        <span style={{ fontWeight: '700', fontSize: '12px', color: '#333' }}>Strategy Planning</span>
+                                <div className="leadership-card-body">
+                                    <div className="leadership-card-name">{person.name}</div>
+                                    <div className="leadership-card-kicker">{person.title}</div>
+                                    {person.focus && <div className="leadership-card-focus">{person.focus}</div>}
+                                    <p>{person.bio}</p>
+                                    <div className="leadership-card-expertise-grid">
+                                        {person.expertise.map((item) => (
+                                            <div key={item.label} className="leadership-card-expertise-item">
+                                                <i className={`fa-solid ${item.icon}`}></i>
+                                                <span>{item.label}</span>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </article>
+                        ))}
                     </div>
                 </div>
             </div>
@@ -330,7 +297,7 @@ const Home = () => {
                         {whyChoosePillars.map((item, i) => (
                             <article key={i} className="why-choose-card" style={{ color: '#1f2937', background: '#f8fafc', border: '1px solid #e5e7eb', borderRadius: '14px', padding: '24px 22px 20px', boxShadow: '0 10px 24px rgba(15,25,37,0.08)', textAlign: 'center' }}>
                                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '14px' }}>
-                                    <div style={{ width: '54px', height: '54px', minWidth: '54px', borderRadius: '50%', border: '1px solid rgba(255, 140, 66, 0.6)', background: 'rgba(255, 140, 66, 0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                    <div className="why-choose-card-icon" style={{ width: '54px', height: '54px', minWidth: '54px', borderRadius: '50%', border: '1px solid rgba(255, 140, 66, 0.6)', background: 'rgba(255, 140, 66, 0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                         <i className={`fa-solid ${item.icon}`} style={{ color: '#FF8C42', fontSize: '22px' }}></i>
                                     </div>
                                     <h3 className="why-choose-card-title" style={{ margin: '0', color: '#111827', fontSize: '16px', fontWeight: '800', lineHeight: '1.2', letterSpacing: '0.3px', textAlign: 'center' }}>
