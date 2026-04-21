@@ -325,7 +325,7 @@ const Home = () => {
                             <div className="career-content" style={{ paddingTop: '0px' }}>
                                 <h3 style={{ fontSize: '20px', fontWeight: '500', marginBottom: '15px', lineHeight: '1.2' }}>Interested in a Career with <strong style={{ fontWeight: '700' }}>a Respected Tax Firm</strong>?</h3>
                                 <p style={{ color: '#666', marginBottom: '20px', fontSize: '13px' }}>Join a culture of professional growth and excellence. We are always looking for talented individuals to join our hierarchy of experts.</p>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
                                     <Link className="career-link" to="/careers" style={{ fontSize: '16px' }}>Work For ZN Tax <i className="fa-solid fa-arrow-right" style={{ marginLeft: '10px' }}></i></Link>
                                 </div>
                             </div>

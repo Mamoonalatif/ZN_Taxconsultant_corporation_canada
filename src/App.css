@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    1. CSS VARIABLES & BASE SETTINGS
    ========================================================================== */
 :root {
@@ -485,13 +485,14 @@ ul.menu li a:hover {
   pointer-events: none;
 }
 
-#top-wrapper.home-nav-overlay > *,
-#header-wrapper.home-nav-overlay > * {
+#top-wrapper.home-nav-overlay>*,
+#header-wrapper.home-nav-overlay>* {
   position: relative;
   z-index: 1;
 }
 
 @media (min-width: 1025px) {
+
   #top-wrapper.home-nav-overlay #top,
   #header-wrapper.home-nav-overlay #header {
     padding-left: 220px;
@@ -565,7 +566,7 @@ ul.menu li a:hover {
   opacity: 1;
 }
 
-#header-shell > .header-grid {
+#header-shell>.header-grid {
   position: relative;
   z-index: 1;
   max-width: 1780px;
@@ -653,16 +654,16 @@ ul.menu li a:hover {
 
 #header-shell.interior-nav ul.menu li a:hover,
 #header-shell.interior-nav ul.menu li a.active,
-#header-shell.interior-nav ul.menu li.active > a,
-#header-shell.interior-nav ul.menu li.has-children > a:hover,
-#header-shell.interior-nav ul.menu li.has-children > a.active {
+#header-shell.interior-nav ul.menu li.active>a,
+#header-shell.interior-nav ul.menu li.has-children>a:hover,
+#header-shell.interior-nav ul.menu li.has-children>a.active {
   color: #ff8c42 !important;
 }
 
 #header-shell .sub-menu li a,
 #header-shell.interior-nav .sub-menu li a,
 #header-shell.home-nav-overlay .sub-menu li a {
-  color:#0F1925;
+  color: #0F1925;
 }
 
 #header-shell .sub-menu li a:hover,
@@ -698,8 +699,8 @@ ul.menu li a:hover {
 #header-shell ul.menu li a:hover,
 #header-shell ul.menu li.active a,
 #header-shell ul.menu li a.active,
-#header-shell ul.menu li.has-children > a.active,
-#header-shell ul.menu li.has-children > a:hover {
+#header-shell ul.menu li.has-children>a.active,
+#header-shell ul.menu li.has-children>a:hover {
   color: #FF8C42 !important;
 }
 
@@ -767,6 +768,7 @@ ul.menu li a:hover {
 }
 
 @media (max-width: 1024px) {
+
   #header-shell,
   #header-shell.home-nav-overlay {
     position: relative;
@@ -780,7 +782,7 @@ ul.menu li a:hover {
     display: none;
   }
 
-  #header-shell > .header-grid {
+  #header-shell>.header-grid {
     grid-template-columns: 1fr;
     padding: 0 15px;
     row-gap: 0;
@@ -814,7 +816,7 @@ ul.menu li a:hover {
   color: #ffffff;
 }
 
-  .home-hero-merged {
+.home-hero-merged {
   padding-top: 230px !important;
 }
 
@@ -2362,6 +2364,7 @@ h2 {
 }
 
 @keyframes floatIcon {
+
   0%,
   100% {
     transform: translateY(0);
@@ -5496,6 +5499,12 @@ ul.copyright-menu li a:hover {
     min-height: auto !important;
   }
 
+  .careers-main-title {
+    font-size: 22px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 20px !important;
+  }
+
   /* Hero Section - Ensure background image covers without distortion */
   .hero-section .wp-block-cover__image-background {
     transform: none !important;
@@ -5662,6 +5671,7 @@ ul.copyright-menu li a:hover {
   .service-grid-v2 .service-card-v2 .text-box a {
     color: #0F1925 !important;
   }
+
   .service-card-v2 h3 {
     font-size: 16px !important;
     margin-bottom: 8px !important;
@@ -6177,6 +6187,12 @@ ul.copyright-menu li a:hover {
   /* Show mobile-only menu items */
   .menu-item.mobile-only-item {
     display: block !important;
+  }
+
+  .wp-block-heading.careers-main-title {
+    font-size: 22px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 20px !important;
   }
 
   .menu-item.divider {
@@ -8023,7 +8039,7 @@ ul.footer-menu-underlined li:before {
   opacity: 0 !important;
 }
 
-#header-shell > .header-grid {
+#header-shell>.header-grid {
   max-width: 1860px;
   padding: 0 30px;
   grid-template-columns: 270px 1fr;
@@ -8081,21 +8097,21 @@ ul.footer-menu-underlined li:before {
   padding: 16px 10px;
 }
 
-#header-shell ul.menu li.has-children > a {
+#header-shell ul.menu li.has-children>a {
   display: inline-flex;
   align-items: center;
 }
 
 #header-shell ul.menu li a:hover,
 #header-shell ul.menu li a.active,
-#header-shell ul.menu li.active > a,
-#header-shell ul.menu li.has-children > a:hover,
-#header-shell ul.menu li.has-children > a.active {
+#header-shell ul.menu li.active>a,
+#header-shell ul.menu li.has-children>a:hover,
+#header-shell ul.menu li.has-children>a.active {
   color: #ff9a4f !important;
 }
 
-#header-shell ul.menu li.has-children > a:after,
-#header-shell ul.top-menu li.has-children > a:after {
+#header-shell ul.menu li.has-children>a:after,
+#header-shell ul.top-menu li.has-children>a:after {
   color: #ffffff !important;
 }
 
@@ -8180,7 +8196,7 @@ ul.footer-menu-underlined li:before {
 }
 
 @media (max-width: 1280px) {
-  #header-shell > .header-grid {
+  #header-shell>.header-grid {
     grid-template-columns: 220px 1fr;
     padding: 0 18px;
   }
@@ -8205,13 +8221,14 @@ ul.footer-menu-underlined li:before {
 }
 
 @media (max-width: 1024px) {
+
   #header-shell,
   #header-shell.home-nav-overlay {
     background: #0F1925 !important;
     backdrop-filter: none;
   }
 
-  #header-shell > .header-grid {
+  #header-shell>.header-grid {
     grid-template-columns: 1fr;
   }
 
@@ -8249,8 +8266,8 @@ ul.footer-menu-underlined li:before {
 }
 
 /* Final navbar alignment tune: keep menu vertically centered with logo and consistent sequence layout */
-#header-shell.interior-nav > .header-grid,
-#header-shell.home-header-split > .header-grid {
+#header-shell.interior-nav>.header-grid,
+#header-shell.home-header-split>.header-grid {
   align-items: center;
 }
 
@@ -8300,7 +8317,7 @@ ul.footer-menu-underlined li:before {
   background: #0F1925 !important;
 }
 
-#header-shell > .header-grid {
+#header-shell>.header-grid {
   grid-template-columns: 240px 1fr !important;
   align-items: center !important;
 }
@@ -8338,20 +8355,20 @@ ul.footer-menu-underlined li:before {
 }
 
 #header-shell.home-nav-overlay ul.menu li a,
-#header-shell.home-nav-overlay ul.menu li.has-children > a:after {
+#header-shell.home-nav-overlay ul.menu li.has-children>a:after {
   color: #ffffff !important;
 }
 
 #header-shell.interior-nav ul.menu li a,
-#header-shell.interior-nav ul.menu li.has-children > a:after {
+#header-shell.interior-nav ul.menu li.has-children>a:after {
   color: #ffffff !important;
 }
 
 #header-shell ul.menu li a:hover,
 #header-shell ul.menu li a.active,
-#header-shell ul.menu li.active > a,
-#header-shell ul.menu li.has-children > a:hover,
-#header-shell ul.menu li.has-children > a.active {
+#header-shell ul.menu li.active>a,
+#header-shell ul.menu li.has-children>a:hover,
+#header-shell ul.menu li.has-children>a.active {
   color: #ff8c42 !important;
 }
 
@@ -8361,7 +8378,7 @@ ul.footer-menu-underlined li:before {
 }
 
 @media (max-width: 1024px) {
-  #header-shell > .header-grid {
+  #header-shell>.header-grid {
     grid-template-columns: 1fr !important;
   }
 }
@@ -8372,7 +8389,7 @@ ul.footer-menu-underlined li:before {
 }
 
 #header-shell.interior-nav ul.menu li a,
-#header-shell.interior-nav ul.menu li.has-children > a:after {
+#header-shell.interior-nav ul.menu li.has-children>a:after {
   color: #ffffff !important;
 }
 
@@ -8417,7 +8434,7 @@ ul.top-menu li.top-cta-item a {
 }
 
 #header-shell.interior-nav ul.menu li a,
-#header-shell.interior-nav ul.menu li.has-children > a:after {
+#header-shell.interior-nav ul.menu li.has-children>a:after {
   color: #ffffff !important;
 }
 
@@ -8444,6 +8461,7 @@ ul.top-menu li.top-cta-item a {
 
 /* Final layout + dropdown hover refinement */
 @media (min-width: 1025px) {
+
   .container,
   .alignfull .wp-block-cover__inner-container,
   .wp-block-cover__inner-container {
@@ -8454,7 +8472,7 @@ ul.top-menu li.top-cta-item a {
     max-width: 80% !important;
     margin-left: 0px !important;
     margin-right: 0 !important;
-    padding-left: 0px!important;
+    padding-left: 0px !important;
   }
 
   .home-hero-merged .hero-content-column {
@@ -8563,6 +8581,7 @@ p {
 
 /* Global responsive hardening */
 @media (max-width: 1024px) {
+
   .container,
   .responsive,
   .wp-block-cover__inner-container,
@@ -8633,6 +8652,7 @@ p {
 }
 
 @media (max-width: 768px) {
+
   html,
   body {
     font-size: 14px;
@@ -8667,6 +8687,7 @@ p {
 }
 
 @media (max-width: 540px) {
+
   .container,
   .responsive,
   .wp-block-cover__inner-container,
@@ -9117,6 +9138,7 @@ p {
 }
 
 @media (max-width: 1024px) {
+
   .leadership-card,
   .leadership-card--reverse {
     min-height: 176px;
@@ -9475,17 +9497,17 @@ p {
 }
 
 /* Unify non-service page hero sections to QuickBooks hero style */
-.careers-page > .wp-block-cover.alignfull.is-light,
-.contact-page > .contact-hero,
-.find-accountant-page > .contact-hero,
-.schedule-page > .contact-hero,
-.why-choose-page > .wp-block-cover.alignfull.is-light,
-.our-people-page > .wp-block-cover.alignfull.is-light,
-.testimonials-page > .wp-block-cover.alignfull.is-light,
-.resources-page > .wp-block-cover.alignfull.is-light,
-.privacy-policy-page > .wp-block-cover.alignfull.is-light,
-.coming-soon-page > .wp-block-cover.alignfull.is-light,
-.not-found-page > .wp-block-cover.alignfull.is-light {
+.careers-page>.wp-block-cover.alignfull.is-light,
+.contact-page>.contact-hero,
+.find-accountant-page>.contact-hero,
+.schedule-page>.contact-hero,
+.why-choose-page>.wp-block-cover.alignfull.is-light,
+.our-people-page>.wp-block-cover.alignfull.is-light,
+.testimonials-page>.wp-block-cover.alignfull.is-light,
+.resources-page>.wp-block-cover.alignfull.is-light,
+.privacy-policy-page>.wp-block-cover.alignfull.is-light,
+.coming-soon-page>.wp-block-cover.alignfull.is-light,
+.not-found-page>.wp-block-cover.alignfull.is-light {
   min-height: 350px !important;
   display: flex !important;
   align-items: center !important;
@@ -9495,65 +9517,65 @@ p {
   position: relative !important;
 }
 
-.careers-page > .wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
-.contact-page > .contact-hero .wp-block-cover__image-background,
-.find-accountant-page > .contact-hero .wp-block-cover__image-background,
-.schedule-page > .contact-hero .wp-block-cover__image-background,
-.why-choose-page > .wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
-.our-people-page > .wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
-.testimonials-page > .wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
-.resources-page > .wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
-.privacy-policy-page > .wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
-.coming-soon-page > .wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
-.not-found-page > .wp-block-cover.alignfull.is-light .wp-block-cover__image-background {
+.careers-page>.wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
+.contact-page>.contact-hero .wp-block-cover__image-background,
+.find-accountant-page>.contact-hero .wp-block-cover__image-background,
+.schedule-page>.contact-hero .wp-block-cover__image-background,
+.why-choose-page>.wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
+.our-people-page>.wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
+.testimonials-page>.wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
+.resources-page>.wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
+.privacy-policy-page>.wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
+.coming-soon-page>.wp-block-cover.alignfull.is-light .wp-block-cover__image-background,
+.not-found-page>.wp-block-cover.alignfull.is-light .wp-block-cover__image-background {
   background-position: 50% 50% !important;
   background-attachment: fixed !important;
   opacity: 0.3 !important;
 }
 
-.careers-page > .wp-block-cover.alignfull.is-light h1,
-.contact-page > .contact-hero h1,
-.find-accountant-page > .contact-hero h1,
-.schedule-page > .contact-hero h1,
-.why-choose-page > .wp-block-cover.alignfull.is-light h1,
-.our-people-page > .wp-block-cover.alignfull.is-light h1,
-.testimonials-page > .wp-block-cover.alignfull.is-light h1,
-.resources-page > .wp-block-cover.alignfull.is-light h1,
-.privacy-policy-page > .wp-block-cover.alignfull.is-light h1,
-.coming-soon-page > .wp-block-cover.alignfull.is-light h1,
-.not-found-page > .wp-block-cover.alignfull.is-light h1 {
+.careers-page>.wp-block-cover.alignfull.is-light h1,
+.contact-page>.contact-hero h1,
+.find-accountant-page>.contact-hero h1,
+.schedule-page>.contact-hero h1,
+.why-choose-page>.wp-block-cover.alignfull.is-light h1,
+.our-people-page>.wp-block-cover.alignfull.is-light h1,
+.testimonials-page>.wp-block-cover.alignfull.is-light h1,
+.resources-page>.wp-block-cover.alignfull.is-light h1,
+.privacy-policy-page>.wp-block-cover.alignfull.is-light h1,
+.coming-soon-page>.wp-block-cover.alignfull.is-light h1,
+.not-found-page>.wp-block-cover.alignfull.is-light h1 {
   font-size: 48px !important;
   font-weight: 300 !important;
   color: #000 !important;
   line-height: 1.2 !important;
 }
 
-.careers-page > .wp-block-cover.alignfull.is-light h1 strong,
-.contact-page > .contact-hero h1 strong,
-.find-accountant-page > .contact-hero h1 strong,
-.schedule-page > .contact-hero h1 strong,
-.why-choose-page > .wp-block-cover.alignfull.is-light h1 strong,
-.our-people-page > .wp-block-cover.alignfull.is-light h1 strong,
-.testimonials-page > .wp-block-cover.alignfull.is-light h1 strong,
-.resources-page > .wp-block-cover.alignfull.is-light h1 strong,
-.privacy-policy-page > .wp-block-cover.alignfull.is-light h1 strong,
-.coming-soon-page > .wp-block-cover.alignfull.is-light h1 strong,
-.not-found-page > .wp-block-cover.alignfull.is-light h1 strong {
+.careers-page>.wp-block-cover.alignfull.is-light h1 strong,
+.contact-page>.contact-hero h1 strong,
+.find-accountant-page>.contact-hero h1 strong,
+.schedule-page>.contact-hero h1 strong,
+.why-choose-page>.wp-block-cover.alignfull.is-light h1 strong,
+.our-people-page>.wp-block-cover.alignfull.is-light h1 strong,
+.testimonials-page>.wp-block-cover.alignfull.is-light h1 strong,
+.resources-page>.wp-block-cover.alignfull.is-light h1 strong,
+.privacy-policy-page>.wp-block-cover.alignfull.is-light h1 strong,
+.coming-soon-page>.wp-block-cover.alignfull.is-light h1 strong,
+.not-found-page>.wp-block-cover.alignfull.is-light h1 strong {
   color: #000 !important;
   font-weight: 700 !important;
 }
 
-.careers-page > .wp-block-cover.alignfull.is-light p,
-.contact-page > .contact-hero p,
-.find-accountant-page > .contact-hero p,
-.schedule-page > .contact-hero p,
-.why-choose-page > .wp-block-cover.alignfull.is-light p,
-.our-people-page > .wp-block-cover.alignfull.is-light p,
-.testimonials-page > .wp-block-cover.alignfull.is-light p,
-.resources-page > .wp-block-cover.alignfull.is-light p,
-.privacy-policy-page > .wp-block-cover.alignfull.is-light p,
-.coming-soon-page > .wp-block-cover.alignfull.is-light p,
-.not-found-page > .wp-block-cover.alignfull.is-light p {
+.careers-page>.wp-block-cover.alignfull.is-light p,
+.contact-page>.contact-hero p,
+.find-accountant-page>.contact-hero p,
+.schedule-page>.contact-hero p,
+.why-choose-page>.wp-block-cover.alignfull.is-light p,
+.our-people-page>.wp-block-cover.alignfull.is-light p,
+.testimonials-page>.wp-block-cover.alignfull.is-light p,
+.resources-page>.wp-block-cover.alignfull.is-light p,
+.privacy-policy-page>.wp-block-cover.alignfull.is-light p,
+.coming-soon-page>.wp-block-cover.alignfull.is-light p,
+.not-found-page>.wp-block-cover.alignfull.is-light p {
   font-size: 22px !important;
   color: #666 !important;
   line-height: 1.5 !important;
@@ -9599,9 +9621,10 @@ p {
   .hamburger-menu span {
     background-color: #FF8C42 !important;
   }
-  #header-shell > .header-grid,
-  #header-shell.interior-nav > .header-grid,
-  #header-shell.home-header-split > .header-grid {
+
+  #header-shell>.header-grid,
+  #header-shell.interior-nav>.header-grid,
+  #header-shell.home-header-split>.header-grid {
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-between !important;
@@ -9610,6 +9633,7 @@ p {
     padding: 10px 15px !important;
     width: 100% !important;
   }
+
   #header-shell #logo,
   #header-shell.interior-nav #logo,
   #header-shell.home-header-split #logo {
@@ -9620,10 +9644,12 @@ p {
     padding: 0 !important;
     flex: 0 0 auto !important;
   }
+
   #header-shell #logo img {
     max-width: 160px !important;
     height: auto !important;
   }
+
   #header-shell .header-right {
     flex: 0 0 auto !important;
     width: auto !important;
@@ -9631,6 +9657,7 @@ p {
     justify-content: flex-end !important;
     align-items: center !important;
   }
+
   .hamburger-menu {
     display: flex !important;
     position: relative !important;
@@ -9639,9 +9666,11 @@ p {
     visibility: visible !important;
     opacity: 1 !important;
   }
+
   .menu-content:not(.open) {
     display: none !important;
   }
+
   .menu-content.open {
     background-color: #0F1925 !important;
   }
@@ -9651,128 +9680,291 @@ p {
    1024px  - Tablets and medium screens
    ============================================================ */
 @media (max-width: 1024px) {
-  html, body {
+
+  html,
+  body {
     overflow-x: hidden;
     width: 100%;
   }
-  h1 { font-size: 30px !important; line-height: 1.2 !important; }
-  h2 { font-size: 24px !important; line-height: 1.25 !important; }
-  h3 { font-size: 20px !important; line-height: 1.3 !important; }
-  h4, h5, h6 { font-size: 16px !important; line-height: 1.35 !important; }
-  p, li, td, th { font-size: 15px !important; line-height: 1.65 !important; }
 
-  button, .btn, .wp-block-button__link, .submit-btn, .sidebar-btn, .filter-btn {
-    font-size: 15px !important; padding: 11px 22px !important;
-    white-space: normal !important; height: auto !important;
-    min-height: 44px !important; line-height: 1.4 !important;
+  h1 {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+  }
+
+  p,
+  li,
+  td,
+  th {
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+  }
+
+  button,
+  .btn,
+  .wp-block-button__link,
+  .submit-btn,
+  .sidebar-btn,
+  .filter-btn {
+    font-size: 15px !important;
+    padding: 11px 22px !important;
+    white-space: normal !important;
+    height: auto !important;
+    min-height: 44px !important;
+    line-height: 1.4 !important;
   }
 
   .home-hero-merged {
-    width: 100vw !important; max-width: 100vw !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
     margin-left: calc(-50vw + 50%) !important;
     margin-right: calc(-50vw + 50%) !important;
     padding: 80px 0 20px 0 !important;
   }
+
   .home-hero-merged .wp-block-cover__inner-container {
-    width: 100% !important; max-width: 100% !important;
-    padding: 0 15px !important; box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 15px !important;
+    box-sizing: border-box !important;
   }
+
   .home-hero-merged .hero-content-column {
-    background: rgba(255,255,255,0.6) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
-    border-radius: 16px !important; padding: 30px 22px !important;
-    box-sizing: border-box !important; width: 100% !important;
-    max-width: 100% !important; margin: 0 auto !important;
-    display: flex !important; flex-direction: column !important;
-    align-items: center !important; justify-content: center !important;
+    border-radius: 16px !important;
+    padding: 30px 22px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
     text-align: center !important;
-  }
-  .home-hero-merged .hero-title {
-    text-shadow: 1px 1px 2px rgba(150,150,150,0.6) !important;
-    color: #111827 !important; text-align: center !important;
-    font-size: 28px !important; line-height: 1.2 !important;
-  }
-  .home-hero-merged .hero-content-column p {
-    text-shadow: 1px 1px 2px rgba(150,150,150,0.6) !important;
-    color: #374151 !important; font-weight: 500 !important;
-    text-align: center !important;
-    margin-left: auto !important; margin-right: auto !important;
-    max-width: 100% !important; font-size: 15px !important;
-  }
-  .hero-cta-row {
-    justify-content: center !important; width: 100% !important; display: flex !important;
   }
 
-  .contact-hero, .page-responsive-padding {
-    padding-top: 110px !important; padding-bottom: 50px !important; min-height: auto !important;
+  .home-hero-merged .hero-title {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9) !important;
+    color: #111827 !important;
+    text-align: center !important;
+    font-size: 28px !important;
+    line-height: 1.2 !important;
   }
-  .wp-block-cover.alignfull.is-light:not(.home-hero-merged):not(.join-team-section):not(.bookkeeping-section) {
-    padding-top: 110px !important; padding-bottom: 50px !important; min-height: auto !important;
+
+  .home-hero-merged .hero-content-column p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6) !important;
+    color: #374151 !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+    font-size: 15px !important;
   }
-  .bookkeeping-section { padding-top: 20px !important; }
+
+  .hero-cta-row {
+    justify-content: center !important;
+    width: 100% !important;
+    display: flex !important;
+  }
+
+  .contact-hero,
+  .page-responsive-padding {
+    padding-top: 110px !important;
+    padding-bottom: 50px !important;
+    min-height: auto !important;
+  }
+
+  .wp-block-cover.alignfull.is-light:not(.home-hero-merged):not(.join-team-section):not(.bookkeeping-section):not(.careers-page .wp-block-cover) {
+    padding-top: 110px !important;
+    padding-bottom: 50px !important;
+    min-height: auto !important;
+  }
+
+  .bookkeeping-section {
+    padding-top: 20px !important;
+  }
 
   .service-slider-track .service-card-v2 {
-    flex: 0 0 calc(50% - 20px) !important; max-width: calc(50% - 20px) !important;
+    flex: 0 0 calc(50% - 20px) !important;
+    max-width: calc(50% - 20px) !important;
   }
 
-  .leadership-section-heading { margin-bottom: 70px !important; }
-  .leadership-stack { margin-top: 80px !important; }
-  .leadership-card, .our-people-page .wp-block-post {
+  .leadership-section-heading {
+    margin-bottom: 70px !important;
+  }
+
+  .leadership-stack {
+    margin-top: 80px !important;
+  }
+
+  .leadership-card,
+  .our-people-page .wp-block-post {
     margin-bottom: 50px !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease !important;
   }
-  .leadership-card:hover, .our-people-page .wp-block-post:hover {
+
+  .leadership-card:hover,
+  .our-people-page .wp-block-post:hover {
     transform: translateY(-8px) !important;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
   }
+
   .leadership-card-expertise-grid {
-    display: grid !important; grid-template-columns: repeat(4,1fr) !important; gap: 8px !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 8px !important;
   }
 
-  .why-choose-card-title { font-size: 16px !important; }
-  .why-choose-card-desc  { font-size: 14px !important; }
+  .why-choose-card-title {
+    font-size: 16px !important;
+  }
 
-  .join-team-section { padding-top: 10px !important; }
+  .why-choose-card-desc {
+    font-size: 14px !important;
+  }
+
+  .join-team-section {
+    padding-top: 10px !important;
+  }
+
   .join-team-img {
-    max-width: 280px !important; display: block !important;
-    margin: 0 auto 20px auto !important; border-radius: 12px;
-  }
-  .career-section { text-align: center !important; }
-  .career-content { display:flex; flex-direction:column; align-items:center; justify-content:center; }
-
-  .consultation-section-modern > div > div { flex-direction: column !important; text-align: center !important; }
-  .consultation-section-modern .consultation-icon-wrapper { margin: 0 auto 15px auto !important; }
-  .consultation-btn-modern { margin: 15px auto 0 auto !important; }
-  .reviews-right { display: flex !important; justify-content: center !important; width: 100% !important; }
-  .write-review-btn, .btn-review-google {
-    margin: 15px auto !important; display: block !important; width: fit-content !important;
+    max-width: 280px !important;
+    display: block !important;
+    margin: 0 auto 20px auto !important;
+    border-radius: 12px;
   }
 
-  .footer-col-2, .footer-col-3 { display: none !important; }
+  .career-section {
+    text-align: center !important;
+  }
+
+  .career-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .consultation-section-modern>div>div {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .consultation-section-modern .consultation-icon-wrapper {
+    margin: 0 auto 15px auto !important;
+  }
+
+  .consultation-btn-modern {
+    margin: 15px auto 0 auto !important;
+  }
+
+  .reviews-right {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .write-review-btn,
+  .btn-review-google {
+    margin: 15px auto !important;
+    display: block !important;
+    width: fit-content !important;
+  }
+
+  .footer-col-2,
+  .footer-col-3 {
+    display: none !important;
+  }
+
   .footer-contact-info .contact-item,
   .footer-contact-info .contact-item a {
-    font-size: 14px !important; font-weight: 400 !important; line-height: 1.6 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
   }
-  .footer-description { font-size: 13px !important; line-height: 1.55 !important; }
 
-  .newsletter-heading { font-size: 20px !important; margin-bottom: 10px !important; }
-  .newsletter-description { font-size: 13px !important; margin-bottom: 15px !important; line-height: 1.4 !important; }
-  .newsletter-form .form-group label { font-size: 13px !important; margin-bottom: 4px !important; }
-  .newsletter-form input { font-size: 13px !important; padding: 8px 12px !important; }
-  .newsletter-disclaimer { font-size: 11px !important; line-height: 1.3 !important; }
-  .newsletter-submit { font-size: 14px !important; padding: 10px 20px !important; }
+  .footer-description {
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+  }
+
+  .newsletter-heading {
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .newsletter-description {
+    font-size: 13px !important;
+    margin-bottom: 15px !important;
+    line-height: 1.4 !important;
+  }
+
+  .newsletter-form .form-group label {
+    font-size: 13px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .newsletter-form input {
+    font-size: 13px !important;
+    padding: 8px 12px !important;
+  }
+
+  .newsletter-disclaimer {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+  }
+
+  .newsletter-submit {
+    font-size: 14px !important;
+    padding: 10px 20px !important;
+  }
 }
 
 /* ============================================================
    600px  - Small phones
    ============================================================ */
 @media (max-width: 600px) {
-  h1 { font-size: 26px !important; }
-  h2 { font-size: 21px !important; }
-  h3 { font-size: 18px !important; }
-  .service-slider-track .service-card-v2 { flex: 0 0 100% !important; max-width: 100% !important; }
-  .leadership-card-expertise-grid { grid-template-columns: repeat(2,1fr) !important; }
+  h1 {
+    font-size: 26px !important;
+  }
+
+  h2 {
+    font-size: 21px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  .service-slider-track .service-card-v2 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .leadership-card-expertise-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }
 
 /* ============================================================
@@ -9790,26 +9982,28 @@ p {
   .bookkeeping-intro-grid {
     flex-direction: column !important;
   }
-  .bookkeeping-intro-grid > div {
+
+  .bookkeeping-intro-grid>div {
     flex: 1 1 100% !important;
     width: 100% !important;
     min-width: 0 !important;
   }
 
   /* Stack the service plans / difference card two-col grid */
-  .bookkeeping-services-section .container > div[style*="grid-template-columns"],
+  .bookkeeping-services-section .container>div[style*="grid-template-columns"],
   .bookkeeping-services-section [style*="gridTemplateColumns"] {
     display: flex !important;
     flex-direction: column !important;
     gap: 30px !important;
   }
-  .bookkeeping-services-section .container > div > div {
+
+  .bookkeeping-services-section .container>div>div {
     width: 100% !important;
     min-width: 0 !important;
   }
 
   /* Stack the "What is a fractional bookkeeper" two-col grid */
-  .bg-light .container > div[style*="grid-template-columns"],
+  .bg-light .container>div[style*="grid-template-columns"],
   .bg-light [style*="gridTemplateColumns"] {
     display: flex !important;
     flex-direction: column !important;
@@ -9836,11 +10030,234 @@ p {
   #root .service-card-v2:hover .text-box span {
     color: #ffffff !important;
   }
+
   #root .service-card-v2:hover .icon-box-fa {
     background: #0F1925 !important;
     color: #FF8C42 !important;
   }
+
   #root .service-card-v2:hover .icon-box-fa i {
     color: #FF8C42 !important;
+  }
+}
+
+/* --- RECENT FIXES --- */
+
+
+/* 2. Hide header when scrolled to bottom */
+#header-shell {
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+#header-shell.hide-header {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 7. Hover effect for Learn More links in service sections */
+.service-card-v2 .text-box a {
+  transition: color 0.3s ease;
+}
+
+#root .service-card-v2:hover .text-box a {
+  color: #ffffff !important;
+}
+
+#root .service-card-v2 .text-box a:hover,
+#root .service-card-v2:hover .text-box a:hover {
+  color: #FF8C42 !important;
+}
+
+/* Mobile & Tablet Specific Fixes */
+@media (max-width: 1024px) {
+
+  /* 1. Hamburger menu orange color */
+  #header-shell .hamburger-menu span,
+  .hamburger-menu span {
+    background-color: #FF8C42 !important;
+    display: block !important;
+    height: 3px !important;
+    width: 30px !important;
+    visibility: visible !important;
+  }
+
+  /* 3. Make bookkeeping hero spacing match tax prep */
+  .contact-hero,
+  .careers-hero {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* 4. Footer center get updates form */
+  .footer-col-4 {
+    min-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .newsletter-signup {
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .newsletter-signup form,
+  .newsletter-form {
+    margin: 0 auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important;
+    max-width: 400px !important;
+  }
+
+  .newsletter-form .form-group {
+    width: 100%;
+    text-align: left;
+  }
+
+  .newsletter-heading,
+  .newsletter-description {
+    text-align: center !important;
+  }
+
+  /* 5. Center text in buttons and center button within container */
+  .wp-block-button__link,
+  .wp-element-button,
+  .wp-block-button {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .careers-hero .wp-block-buttons,
+  .contact-hero .wp-block-buttons,
+  .page-responsive-padding .wp-block-buttons {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  /* 6. Remove extra space in Quickbooks page */
+  .quickbooks-main-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  .quickbooks-ready-section {
+    margin-top: 10px !important;
+    padding-top: 20px !important;
+  }
+
+  .quickbooks-sidebar-section {
+    margin-top: 0px !important;
+  }
+
+  .quickbooks-sidebar-section>div {
+    padding: 25px !important;
+  }
+
+  /* 8. Tax Prep remove picture below hero */
+  .tax-prep-mobile-hide-image {
+    display: none !important;
+  }
+
+  .tax-prep-mobile-hide-image+div {
+    flex: 1 1 100% !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  /* 9. Proper left/right padding to hero section on all pages except homepage */
+  .contact-hero,
+  .careers-hero,
+  .page-responsive-padding:not(.home-hero-merged),
+  .wp-block-cover.alignfull:not(.home-hero-merged) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* 10. Hero text size adjustment for all internal pages */
+  .contact-hero h1,
+  .careers-hero h1,
+  .page-responsive-padding:not(.home-hero-merged) h1,
+  .wp-block-cover:not(.home-hero-merged) h1.wp-block-heading,
+  .wp-block-cover:not(.home-hero-merged) h1 {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+  }
+
+  .contact-hero p,
+  .careers-hero p,
+  .page-responsive-padding:not(.home-hero-merged)>.wp-block-cover__inner-container>p,
+  .page-responsive-padding:not(.home-hero-merged)>.container>p,
+  .wp-block-cover:not(.home-hero-merged)>.wp-block-cover__inner-container>p,
+  .wp-block-cover:not(.home-hero-merged)>.container>p {
+    font-size: 15px !important;
+  }
+
+  /* 11. Careers Page - Values grid stack vertically & remove extra spacing */
+  .careers-page .values-grid,
+  .our-people-page .values-grid,
+  .values-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  .careers-page .values-grid .value-item,
+  .our-people-page .values-grid .value-item,
+  .values-grid .value-item {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    padding: 30px 20px !important;
+  }
+
+  .careers-page .values-grid .value-item h3,
+  .our-people-page .values-grid .value-item h3,
+  .values-grid .value-item h3 {
+    font-size: 20px !important;
+  }
+
+  .careers-page .values-grid .value-item p,
+  .our-people-page .values-grid .value-item p,
+  .values-grid .value-item p {
+    font-size: 15px !important;
+  }
+
+  .careers-page .values-grid .value-item div:first-child,
+  .values-grid .value-item div:first-child {
+    font-size: 32px !important;
+  }
+
+  .careers-page .wp-block-cover:not(.careers-hero),
+  .careers-page .wp-block-cover:not(.careers-hero)[style],
+  .careers-page .section-padding {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .careers-page .wp-block-columns {
+    gap: 20px !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .careers-page h2.wp-block-heading {
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
   }
 }

@@ -10,6 +10,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [expandedDropdown, setExpandedDropdown] = useState(null);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isAtBottom, setIsAtBottom] = useState(false);
     const location = useLocation();
     const isHomePage = location.pathname === '/';
     const headerLogo = isHomePage ? logoImg : logoWithoutBg;
@@ -23,6 +24,13 @@ const Header = () => {
     useEffect(() => {
         const onScroll = () => {
             setIsScrolled(window.scrollY > 24);
+            
+            const footer = document.getElementById('footer-wrapper');
+            const footerHeight = footer ? footer.offsetHeight : 300;
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            setIsAtBottom(scrollPosition >= documentHeight - footerHeight + 50);
         };
 
         onScroll();
@@ -44,7 +52,7 @@ const Header = () => {
         <>
             <header
                 id="header-shell"
-                className={`${isHomePage ? 'home-nav-overlay home-header-split' : 'interior-nav'} ${isScrolled ? 'is-scrolled' : ''}`.trim()}
+                className={`${isHomePage ? 'home-nav-overlay home-header-split' : 'interior-nav'} ${isScrolled ? 'is-scrolled' : ''} ${isAtBottom ? 'hide-header' : ''}`.trim()}
             >
                 <div className="header-grid responsive">
                     <div id="logo">
@@ -63,9 +71,9 @@ const Header = () => {
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
                             aria-label="Toggle menu"
                         >
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span style={{ backgroundColor: '#FF8C42' }}></span>
+                            <span style={{ backgroundColor: '#FF8C42' }}></span>
+                            <span style={{ backgroundColor: '#FF8C42' }}></span>
                         </button>
                         <div className={`menu-content ${isMenuOpen ? 'open' : ''}`}>
                             <nav className="right">

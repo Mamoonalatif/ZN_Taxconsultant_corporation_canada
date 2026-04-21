@@ -28,16 +28,17 @@ const Bookkeeping = () => {
     return (
         <div className="service-page">
             {/* Hero Section */}
-            <div className="contact-hero alignfull page-responsive-padding" style={{
+            <div className="wp-block-cover alignfull is-light careers-hero page-responsive-padding" style={{
                 minHeight: '400px',
-                background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
                 display: 'flex',
                 alignItems: 'center',
-                overflow: 'hidden',
-                paddingTop: '40px',
-                paddingBottom: '40px'
+                paddingTop: '60px',
+                paddingBottom: '60px',
+                background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
+                position: 'relative',
+                overflow: 'hidden'
             }}>
-                <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+                <div className="wp-block-cover__inner-container container" style={{ position: 'relative', zIndex: 2 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '40px', flexWrap: 'wrap' }}>
                         <div style={{ flex: '1 1 500px' }}>
                             <h1 style={{ fontSize: '48px', color: '#000', fontWeight: '700', lineHeight: '1.1', marginTop: '0', marginBottom: '15px' }}>

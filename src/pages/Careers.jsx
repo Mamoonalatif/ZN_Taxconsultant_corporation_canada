@@ -100,7 +100,7 @@ const Careers = () => {
             </div>
 
             {/* Growing Team Section */}
-            <div className="wp-block-cover alignfull is-light page-responsive-padding" style={{ backgroundColor: '#f9f9f9', paddingTop: '60px', paddingBottom: '60px' }}>
+            <div className="wp-block-cover alignfull is-light page-responsive-padding" style={{ backgroundColor: '#f9f9f9', paddingTop: '30px', paddingBottom: '10px' }}>
                 <div className="wp-block-cover__inner-container container">
                     <div className="wp-block-columns is-vertically-aligned-center" style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
                         <div className="wp-block-column animate-side-left" style={{ flex: '1 1 100%' }} ref={el => sectionRefs.current[0] = el}>
@@ -114,14 +114,14 @@ const Careers = () => {
 
 
             {/* Benefits & Locations Section */}
-            <div className="wp-block-cover alignfull is-light" style={{ backgroundColor: '#eeeeee', padding: '60px 0' }}>
+            <div className="wp-block-cover alignfull is-light" style={{ backgroundColor: '#eeeeee', padding: '20px 0' }}>
                 <div className="wp-block-cover__inner-container container">
                     <div className="wp-block-columns are-vertically-aligned-center benefits-location-columns" style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
                         <div className="wp-block-column" style={{ flex: '1 1 450px' }}>
                             <div className="glass-effect" style={{ padding: '40px', borderRadius: '30px', backgroundColor: '#fff', border: '1px solid #f0f0f0', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
                                 <h2 className="wp-block-heading" style={{ fontSize: '26px', marginBottom: '20px', fontWeight: '700', color: '#000' }}>You’ll <strong>Enjoy These Benefits</strong></h2>
                                 <p style={{ marginBottom: '15px', color: '#666', fontSize: '13px' }}>We think our employees deserve the best:</p>
-                                <ul className="wp-block-list checkmark benefits-list" style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '10px' }}>
+                                <ul className=" checkmark benefits-list" style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '10px' }}>
                                     {[
                                         'Medical, Dental, & Vision Insurance',
                                         'Group Life Insurance ($20K)',
@@ -144,12 +144,12 @@ const Careers = () => {
                                 <p style={{ marginTop: '20px', fontSize: '11px', color: '#666' }}>For more info, <a href="/contact" style={{ color: '#FF8C42', textDecoration: 'underline' }}>contact us</a> today.</p>
                             </div>
                         </div>
-                    
+
                     </div>
                 </div>
             </div>
 
-            <div className="wp-block-cover alignfull is-light has-parallax section-padding" style={{ backgroundColor: '#f9f9f9', paddingTop: '80px', paddingBottom: '80px' }}>
+            <div className="wp-block-cover alignfull is-light has-parallax section-padding" style={{ backgroundColor: '#f9f9f9', paddingTop: '40px', paddingBottom: '40px' }}>
                 <div className="wp-block-cover__inner-container container">
                     <div className="wp-block-columns are-vertically-aligned-center">
                         <div className="wp-block-column" style={{ flex: '1 1 100%' }}>
@@ -180,7 +180,7 @@ const Careers = () => {
             </div>
 
             {/* Qualifications Section */}
-            <div className="wp-block-cover alignfull is-light page-responsive-padding" style={{ backgroundColor: '#f0f2f5', paddingTop: '80px', paddingBottom: '80px' }}>
+            <div className="wp-block-cover alignfull is-light page-responsive-padding" style={{ backgroundColor: '#f0f2f5', paddingTop: '40px', paddingBottom: '60px' }}>
                 <div className="wp-block-cover__inner-container container">
                     <h2 className="wp-block-heading" style={{ fontSize: '36px', fontWeight: '700', marginBottom: '25px', color: '#000' }}><strong>Qualifications</strong> <span style={{ color: '#666' }}>We Look For</span></h2>
                     <p style={{ fontSize: '15px', color: '#555', marginBottom: '40px', lineHeight: '1.6' }}>When we seek an accountant or bookkeeper, we have a few major qualifications:</p>
@@ -189,7 +189,7 @@ const Careers = () => {
                         {/* Hard Skills */}
                         <div className="wp-block-column" style={{ flex: '1 1 450px', padding: '40px', borderRadius: '30px', backgroundColor: '#fff', border: '1px solid #f0f0f0', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
                             <h3 className="wp-block-heading" style={{ fontSize: '22px', marginBottom: '25px', fontWeight: '700', color: '#000' }}>Hard Skills</h3>
-                            <ul className="wp-block-list" style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
+                            <ul className="" style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
                                 {[
                                     { title: 'Certifications for managing finances and advising', text: 'Certifications for managing finances and advising.' },
                                     { title: 'Experience with Taxcycle and learning new tools', text: 'Experience with UltraTax and learning new tools.' },
@@ -206,7 +206,7 @@ const Careers = () => {
                         {/* Soft Skills */}
                         <div className="wp-block-column" style={{ flex: '1 1 450px', padding: '40px', borderRadius: '30px', backgroundColor: '#fff', border: '1px solid #f0f0f0', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
                             <h3 className="wp-block-heading" style={{ fontSize: '22px', marginBottom: '25px', fontWeight: '700', color: '#000' }}>Soft Skills</h3>
-                            <ul className="wp-block-list" style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
+                            <ul className="" style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
                                 {[
                                     { title: 'Strategizing', text: 'Big-picture strategies and innovative solutions.' },
                                     { title: 'Communication', text: 'Professionalism and clarity with all clients.' },
@@ -224,7 +224,7 @@ const Careers = () => {
                 </div>
             </div>
 
-          
+
 
             {/* SERVICES DELIVERED (Grid matching homepage) */}
             <div className="wp-block-cover alignfull has-parallax" style={{ color: '#fff', backgroundColor: '#1F2937', paddingTop: '60px', paddingBottom: '60px' }}>
@@ -235,11 +235,11 @@ const Careers = () => {
                         {[
                             { title: 'Bookkeeping', icon: 'fa-book-bookmark', link: '/bookkeeping' },
                             { title: 'Tax Prep & Planning', icon: 'fa-file-invoice-dollar', link: '/tax' },
-                       
+
                             { title: 'Business Consulting', icon: 'fa-users-gear', link: '/consulting' },
-                        
+
                             { title: 'QuickBooks® Services', icon: 'fa-laptop-code', link: '/quickbooks' },
-                     
+
                         ].map((s, i) => (
                             <div key={i} className="service-card-v2 animate-card revealed" style={{ opacity: 1, transform: 'none' }}>
                                 <div className="icon-box-fa">

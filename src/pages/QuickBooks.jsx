@@ -74,7 +74,7 @@ const QuickBooks = () => {
                     <p style={{ fontSize: '22px', color: '#666', maxWidth: '850px', margin: '25px 0', lineHeight: '1.5', fontWeight: '400' }}>
                         QuickBooks® is the Ideal Business Accounting Software for Small- to Mid-Sized Businesses — and it's Better with Support from the Pros.
                     </p>
-                    <div className="wp-block-buttons" style={{ marginTop: '30px' }}>
+                    <div className="wp-block-buttons" style={{ marginTop: '30px', display: 'flex', justifyContent: 'center' }}>
                         <div className="wp-block-button">
                             <Link className="wp-block-button__link wp-element-button" to="/contact" style={{
                                 background: '#FF8C42',
@@ -82,7 +82,9 @@ const QuickBooks = () => {
                                 padding: '15px 40px',
                                 borderRadius: '50px',
                                 fontWeight: 'bold',
-                                fontSize: '16px'
+                                fontSize: '16px',
+                                textAlign: 'center',
+                                display: 'inline-block'
                             }}>
                                 Consult With ZN Tax and Accounting Services
                             </Link>
@@ -106,7 +108,7 @@ const QuickBooks = () => {
             {/* Main Content Section */}
             <div className="section-padding bg-white">
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '80px', alignItems: 'start' }}>
+                    <div className="quickbooks-main-grid" style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '80px', alignItems: 'start' }}>
                         {/* Left Column */}
                         <div>
                             <h2 style={{ fontSize: '32px', fontWeight: '300', marginBottom: '30px', color: '#1a1a1a' }}>
@@ -125,7 +127,7 @@ const QuickBooks = () => {
                         </div>
 
                         {/* Right Column - Sidebar */}
-                        <div style={{ position: 'sticky', top: '100px' }}>
+                        <div className="quickbooks-sidebar-section" style={{ position: 'sticky', top: '100px' }}>
                             <div style={{
                                 background: '#f8f9fa',
                                 padding: '40px',
@@ -154,7 +156,7 @@ const QuickBooks = () => {
                         </div>
                     </div>
 
-                    <div style={{ marginTop: '80px', textAlign: 'center', borderTop: '1px solid #eee', paddingTop: '40px' }}>
+                    <div className="quickbooks-ready-section" style={{ marginTop: '80px', textAlign: 'center', borderTop: '1px solid #eee', paddingTop: '40px' }}>
                         <p style={{ fontSize: '14px', color: '#333' }}>
                             Are you ready to experience all the benefits of QuickBooks® services? <Link to="/contact" style={{ color: '#FF8C42', fontWeight: 'bold', textDecoration: 'underline' }}>Contact ZN Tax and Accounting Services</Link> today to learn more.
                         </p>
@@ -255,17 +257,20 @@ const QuickBooks = () => {
                             <p style={{ marginBottom: '20px' }}>Before you make a QuickBooks® purchase, contact ZN Tax and Accounting Services to see what type of discount we might be able to arrange for you. Be sure to ask about how our QuickBooks® bookkeeping services and QuickBooks® accounting services can make your business more efficient.</p>
                             <p style={{ fontWeight: '600' }}>We have a member of <Link to="/contact" style={{ color: '#FF8C42', textDecoration: 'underline' }}>the ZN Tax and Accounting Services team</Link> ready to speak to you.</p>
                         </div>
-                        <Link className="wp-block-button__link wp-element-button" to="/contact" style={{
-                            background: '#FF8C42',
-                            color: '#fff',
-                            padding: '15px 40px',
-                            borderRadius: '50px',
-                            fontWeight: 'bold',
-                            fontSize: '16px',
-                            display: 'inline-block'
-                        }}>
-                            Consult With ZN Tax and Accounting Services
-                        </Link>
+                        <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                            <Link className="wp-block-button__link wp-element-button" to="/contact" style={{
+                                background: '#FF8C42',
+                                color: '#fff',
+                                padding: '15px 40px',
+                                borderRadius: '50px',
+                                fontWeight: 'bold',
+                                fontSize: '16px',
+                                display: 'inline-block',
+                                textAlign: 'center'
+                            }}>
+                                Consult With ZN Tax and Accounting Services
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -75,7 +75,7 @@ const TaxPreparation = () => {
                 <div className="container">
                     <div style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
                         {/* Image Column */}
-                        <div style={{ flex: '40%', zIndex: 2 }}>
+                        <div className="tax-prep-mobile-hide-image" style={{ flex: '40%', zIndex: 2 }}>
                             <img src={strategicPlanningImg} alt="Strategic Planning" style={{ width: '90%', borderRadius: '15px', display: 'block', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
                         </div>
 
