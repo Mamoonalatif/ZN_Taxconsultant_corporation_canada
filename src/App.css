@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    1. CSS VARIABLES & BASE SETTINGS
    ========================================================================== */
 :root {
@@ -9544,7 +9544,7 @@ p {
 .privacy-policy-page>.wp-block-cover.alignfull.is-light h1,
 .coming-soon-page>.wp-block-cover.alignfull.is-light h1,
 .not-found-page>.wp-block-cover.alignfull.is-light h1 {
-  font-size: 48px !important;
+  font-size: 34px !important;
   font-weight: 300 !important;
   color: #000 !important;
   line-height: 1.2 !important;
@@ -9576,7 +9576,7 @@ p {
 .privacy-policy-page>.wp-block-cover.alignfull.is-light p,
 .coming-soon-page>.wp-block-cover.alignfull.is-light p,
 .not-found-page>.wp-block-cover.alignfull.is-light p {
-  font-size: 22px !important;
+  font-size: 15px !important;
   color: #666 !important;
   line-height: 1.5 !important;
   font-weight: 400 !important;
@@ -10255,7 +10255,7 @@ p {
     gap: 20px !important;
     margin-bottom: 0 !important;
   }
-  
+
   .careers-page h2.wp-block-heading {
     margin-top: 10px !important;
     margin-bottom: 15px !important;
