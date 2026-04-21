@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import whiteBg from '../assets/images/white-bg.jpg';
+import zulqarnainImage from '../assets/images/zulqarnainnasir.jpeg';
 
 const OurPeople = () => {
     const leadership = [
         {
-            name: "Zulqarnain Nasir",
+            name: "Zulqarnain Naseer",
             title: "CPA, Principal",
             bio: "Zulqarnain leads ZN Tax and Accounting Services with a commitment to integrity and strategic excellence. His focus is on client service excellence, integrity, and long-term value creation. Zulqarnain is a CPA in the state of Pennsylvania as well  and operates a tax service there too. Over his career has  served as senior accountant for the State and is the go-to guy for US tax advice. He specializes in complex tax planning for SMEs, professional corporations of doctors and dentists and revenue optimization.",
             icon: "fa-user-tie"
@@ -14,7 +15,7 @@ const OurPeople = () => {
             name: "Usman Yousaf",
             title: "Manager",
             bio: "An accountant by profession, Usman has served in many roles over his career of 2 decades. He has worked in the big three banks of the country, as well as multinational corporations like Telenor, the telecom giant of Norway. Usman has certification in risk management and compliance. Usman brings a wealth of experience to the practice and leads the firm's day to day operations.",
-            icon: "fa-briefcase"
+            image: zulqarnainImage
         },
         {
 

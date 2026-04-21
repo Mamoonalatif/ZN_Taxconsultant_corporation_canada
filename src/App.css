@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    1. CSS VARIABLES & BASE SETTINGS
    ========================================================================== */
 :root {
@@ -888,6 +888,203 @@ ul.menu li.nav-cta-item a:hover {
   padding-right: 200px;
 }
 
+/* =========================================================================== 
+   HOMEPAGE RESPONSIVE - TABLET (1024px and below)
+   =========================================================================== */
+@media (max-width: 1024px) {
+  .home-hero-merged {
+    padding-top: 80px !important;
+  }
+
+  .home-hero-merged .wp-block-cover__inner-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+  }
+
+  .home-hero-merged .hero-content-column {
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 0 15px;
+  }
+
+  .hero-title {
+    font-size: 36px !important;
+  }
+
+  .service-slider-track .service-card-v2 {
+    flex: 0 0 calc(70% - 12px);
+  }
+}
+
+/* =========================================================================== 
+   HOMEPAGE RESPONSIVE - MEDIUM SCREENS (768px and below)
+   =========================================================================== */
+@media (max-width: 768px) {
+  .home-hero-merged {
+    min-height: 350px !important;
+    padding-top: 70px !important;
+  }
+
+  .home-hero-merged .wp-block-cover__inner-container {
+    padding: 0 15px;
+  }
+
+  .home-hero-merged .hero-content-column {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-title {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    max-width: 95%;
+  }
+
+  .hero-kicker {
+    font-size: 14px !important;
+  }
+
+  .hero-cta-row {
+    gap: 10px;
+  }
+
+  .hero-btn-orange,
+  .hero-btn-green {
+    padding: 10px 18px !important;
+    font-size: 12px !important;
+  }
+
+  .services-carousel-wrapper {
+    padding: 0 35px;
+  }
+
+  .service-slider-track .service-card-v2 {
+    flex: 0 0 100%;
+  }
+
+  .service-card-v2 {
+    flex-direction: column;
+  }
+
+  .service-card-v2 .icon-box,
+  .service-card-v2 .icon-box-fa {
+    width: 100%;
+    height: 80px;
+  }
+
+  .leadership-card,
+  .leadership-card--reverse {
+    min-height: 160px;
+    padding: 14px 20px;
+  }
+
+  .leadership-card-avatar {
+    width: 140px;
+    height: 140px;
+    left: -40px;
+  }
+
+  .why-choose-grid {
+    gap: 20px !important;
+  }
+
+  .section-padding {
+    padding: 50px 0 !important;
+  }
+}
+
+/* =========================================================================== 
+   HOMEPAGE RESPONSIVE - SMALL SCREENS (540px and below)
+   =========================================================================== */
+@media (max-width: 540px) {
+  .home-hero-merged {
+    min-height: 300px !important;
+    padding-top: 60px !important;
+  }
+
+  .home-hero-merged .wp-block-cover__inner-container {
+    padding: 0 12px;
+  }
+
+  .hero-title {
+    font-size: 22px !important;
+    line-height: 1.25 !important;
+    max-width: 100%;
+    margin-bottom: 10px !important;
+  }
+
+  .hero-kicker {
+    font-size: 12px !important;
+  }
+
+  .hero-cta-row {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .hero-btn-orange,
+  .hero-btn-green {
+    padding: 12px 16px !important;
+    width: 100%;
+  }
+
+  .services-carousel-wrapper {
+    padding: 0 30px;
+  }
+
+  .service-slider-track .service-card-v2 {
+    flex: 0 0 100%;
+  }
+
+  .service-card-v2 {
+    flex-direction: column;
+    border-radius: 8px;
+  }
+
+  .service-card-v2 .icon-box,
+  .service-card-v2 .icon-box-fa {
+    height: 70px;
+    width: 100%;
+  }
+
+  .leadership-stack {
+    gap: 12px;
+  }
+
+  .leadership-card,
+  .leadership-card--reverse {
+    padding: 80px 12px 12px;
+    text-align: center;
+  }
+
+  .leadership-card-avatar,
+  .leadership-card--reverse .leadership-card-avatar {
+    left: 50%;
+    right: auto;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+  }
+
+  .leadership-card-body,
+  .leadership-card--reverse .leadership-card-body {
+    padding: 0;
+  }
+
+  .why-choose-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  .section-padding {
+    padding: 40px 0 !important;
+  }
+}
+
 .home-hero-merged.hero-section.wp-block-cover h1,
 .home-hero-merged.hero-section.wp-block-cover h2,
 .home-hero-merged.hero-section.wp-block-cover h3,
@@ -1249,12 +1446,12 @@ ul.menu li.nav-cta-item a:hover {
 }
 
 .service-card-v2:hover .icon-box-fa {
-  background: #f8f9fa;
-  color: #0F1925;
+  background: #0F1925;
+  color: #FF8C42;
 }
 
 .service-card-v2:hover .icon-box-fa i {
-  color: #0F1925 !important;
+  color: #FF8C42 !important;
 }
 
 .service-card-v2 .icon-box img {
@@ -1635,7 +1832,7 @@ a[href*="explore"]:hover,
   }
 }
 
-/* Location Pages - Small Screens (≤540px) */
+/* Location Pages - Small Screens (ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤540px) */
 @media (max-width: 540px) {
   .location-image-section {
     padding: 40px 15px !important;
@@ -1777,7 +1974,7 @@ a[href*="explore"]:hover,
 }
 
 .checkmark-list li::before {
-  content: '✓';
+  content: 'ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“';
   position: absolute;
   left: 0;
   color: #28a745;
@@ -1879,7 +2076,7 @@ a[href*="explore"]:hover,
 }
 
 .reasons-content .wp-block-list li::before {
-  content: "•";
+  content: "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢";
   color: #000;
   font-size: 14px;
   top: -2px;
@@ -1940,7 +2137,7 @@ a[href*="explore"]:hover,
 }
 
 .wp-block-list li::before {
-  content: "•";
+  content: "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢";
   color: #333;
   font-weight: bold;
   position: absolute;
@@ -1949,7 +2146,7 @@ a[href*="explore"]:hover,
 }
 
 .wp-block-list.checkmark li::before {
-  content: \"✓\";
+  content: \"ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“\";
   color: #28a745;
   /* Success Green */
 }
@@ -2290,7 +2487,7 @@ h2 {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
   margin-top: 0;
-  padding: 60px 0 0 0;
+  padding: 60px 40px 0 40px;
 }
 
 #footer {
@@ -2435,7 +2632,7 @@ ul.footer-menu li {
 }
 
 ul.footer-menu li:before {
-  content: '▶';
+  content: '\203A';
   position: absolute;
   left: 0;
   color: #aeb1b2;
@@ -2469,10 +2666,10 @@ ul.footer-menu-underlined li:before {
 
 /* Footer Column 4 - Newsletter Signup */
 .footer-col-4 {
-  background: #ffffff;
+  background: #f5f6f7;
   padding: 30px 25px;
   border-radius: 4px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .newsletter-signup {
@@ -2555,6 +2752,8 @@ ul.footer-menu-underlined li:before {
   cursor: pointer;
   transition: background 0.3s ease;
   font-family: inherit;
+  width: auto;
+  align-self: flex-start;
 }
 
 .newsletter-submit:hover {
@@ -2645,6 +2844,10 @@ ul.copyright-menu li a:hover {
 
 /* Responsive Footer */
 @media (max-width: 1024px) {
+  #footer-wrapper {
+    padding: 50px 30px 0 30px;
+  }
+
   .footer-columns {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -2660,16 +2863,37 @@ ul.copyright-menu li a:hover {
 }
 
 @media (max-width: 768px) {
-  .footer-columns {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  #footer-wrapper {
+    padding: 40px 20px 0 20px;
   }
 
-  .footer-col-1,
+  .footer-columns {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .footer-col-1 {
+    grid-column: 1 / -1;
+  }
+
   .footer-col-2,
-  .footer-col-3,
+  .footer-col-3 {
+    grid-column: auto;
+  }
+
   .footer-col-4 {
-    grid-column: 1;
+    grid-column: 1 / -1;
+    padding: 25px 20px;
+  }
+
+  .newsletter-heading {
+    font-size: 18px;
+  }
+
+  .newsletter-submit {
+    width: 100%;
+    padding: 11px 24px;
+    font-size: 15px;
   }
 
   ul.copyright-menu {
@@ -2689,20 +2913,251 @@ ul.copyright-menu li a:hover {
   }
 }
 
+/* Small Screens (540px and below) - Footer sizing */
+@media (max-width: 540px) {
+  #footer-wrapper {
+    padding: 30px 15px 0 15px;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4 {
+    grid-column: 1;
+  }
+
+  .footer-col-3b {
+    grid-column: 1;
+  }
+
+  /* Dropdown button styling on small screens */
+  .footer-dropdown-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 8px;
+    user-select: none;
+    padding: 0;
+  }
+
+  .footer-dropdown-btn i {
+    font-size: 10px;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .footer-dropdown-btn.expanded i {
+    transform: rotate(180deg);
+  }
+
+  .footer-col-2 .footer-menu,
+  .footer-col-3 .footer-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-bottom: 15px;
+  }
+
+  .footer-col-2 .footer-menu.show,
+  .footer-col-3 .footer-menu.show {
+    max-height: 500px;
+  }
+
+  /* Quick links styling */
+  .footer-menu-quick {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+
+  .footer-menu-quick li {
+    font-size: 12px;
+    padding-left: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  /* Footer contact info - smaller icons and text */
+  .contact-item {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+
+  .contact-item i {
+    font-size: 11px;
+    width: 12px;
+    margin-right: 8px;
+  }
+
+  /* Social icons - smaller circles and icons */
+  ul.social-icons {
+    gap: 8px;
+  }
+
+  ul.social-icons a {
+    width: 32px;
+    height: 32px;
+  }
+
+  ul.social-icons a i {
+    font-size: 14px;
+  }
+
+  /* Footer menu - smaller text */
+  ul.footer-menu li {
+    font-size: 11px;
+    padding-left: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  ul.footer-menu li:before {
+    font-size: 7px;
+    top: 7px;
+  }
+
+  ul.footer-menu-underlined li {
+    padding: 8px 0 8px 14px;
+  }
+
+  ul.footer-menu-underlined li:before {
+    top: 10px;
+  }
+
+  /* Newsletter section - smaller text and sizing */
+  .footer-col-4 {
+    padding: 15px 12px;
+  }
+
+  .newsletter-heading {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .newsletter-description {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-form {
+    gap: 8px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .form-group label {
+    font-size: 11px;
+    margin-bottom: 3px;
+  }
+
+  .form-group input {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .newsletter-disclaimer {
+    font-size: 8px;
+    margin: 8px 0;
+  }
+
+  .newsletter-submit {
+    width: 100%;
+    padding: 9px 16px;
+    font-size: 12px;
+  }
+
+  /* Footer description text - smaller */
+  .footer-description {
+    font-size: 12px;
+  }
+
+  /* Footer logo - smaller */
+  #footer-logo img {
+    width: 140px;
+  }
+
+  #copyright {
+    font-size: 11px;
+    padding: 15px 0;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  ul.copyright-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  ul.copyright-menu li a {
+    font-size: 11px;
+  }
+}
+
+/* Medium and Large screens - hide quick links and convert dropdown buttons back to headings */
+@media (min-width: 541px) {
+  .footer-col-3b {
+    display: none;
+  }
+
+  .footer-dropdown-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding: 0;
+    display: block;
+    cursor: auto;
+  }
+
+  .footer-dropdown-btn i {
+    display: none;
+  }
+
+  .footer-col-2 .footer-menu,
+  .footer-col-3 .footer-menu {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .footer-col-2 .footer-menu.show,
+  .footer-col-3 .footer-menu.show {
+    max-height: none;
+  }
+}
+
 /* ==========================================================================
    11. GOOGLE REVIEWS SECTION (EXACT REPLICA)
    ========================================================================== */
 .reviews-section {
   background-color: #ffffff;
-  padding: 25px 0;
+  padding: 40px 60px;
   overflow: hidden;
 }
 
 .reviews-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 50px;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .reviews-left {
@@ -2763,6 +3218,38 @@ ul.copyright-menu li a:hover {
 .review-count {
   font-size: 12px;
   color: #666;
+}
+
+/* Responsive Google Reviews Section */
+@media (max-width: 768px) {
+  .reviews-section {
+    padding: 30px 40px !important;
+  }
+
+  .reviews-container {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 540px) {
+  .reviews-section {
+    padding: 25px 20px !important;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .reviews-left {
+    flex: 0 0 auto !important;
+  }
+
+  .reviews-right {
+    flex: 0 0 auto !important;
+    width: 100%;
+  }
 }
 
 /* Review Slider Area */
@@ -4156,7 +4643,7 @@ ul.copyright-menu li a:hover {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #000;
+  background-color: #FF8C42;
   transition: all 0.3s ease;
   border-radius: 2px;
 }
@@ -4184,8 +4671,8 @@ ul.copyright-menu li a:hover {
   }
 }
 
-/* --- MOBILE: SHOW HAMBURGER (<=540px) --- */
-@media (max-width: 540px) {
+/* --- MOBILE: SHOW HAMBURGER (<=1024px) --- */
+@media (max-width: 1024px) {
 
   #top-wrapper,
   #top {
@@ -4317,8 +4804,8 @@ ul.copyright-menu li a:hover {
   }
 }
 
-/* --- DESKTOP/TABLET: NAVBAR STAYS NORMAL (>540px) --- */
-@media (min-width: 541px) {
+/* --- DESKTOP/TABLET: NAVBAR STAYS NORMAL (>1024px) --- */
+@media (min-width: 1025px) {
   .menu-content {
     position: relative !important;
     top: auto !important;
@@ -4623,13 +5110,13 @@ ul.copyright-menu li a:hover {
 }
 
 .service-card-v2:hover .icon-box-fa {
-  background-color: #f7fbfd;
-  color: #0F1925;
-  transform: rotateY(360deg) scale(1.1);
+  background: #0F1925;
+  color: #FF8C42;
+  transform: scale(1.05);
 }
 
 .service-card-v2:hover .icon-box-fa i {
-  color: #0F1925 !important;
+  color: #FF8C42 !important;
 }
 
 .animate-card {
@@ -8049,6 +8536,25 @@ ul.top-menu li.top-cta-item a {
   color: #111827 !important;
 }
 
+/* Ensure orange hover effect always applies to homepage navbar dropdown */
+#header-shell.home-nav-overlay ul.menu li ul li a:hover,
+#header-shell.home-nav-overlay ul.menu li ul li a:focus {
+  background: #FF8C42 !important;
+  color: #ffffff !important;
+  border-bottom-color: #FF8C42 !important;
+}
+
+#header-shell.home-nav-overlay ul.menu li ul li a:hover i,
+#header-shell.home-nav-overlay ul.menu li ul li a:hover svg,
+#header-shell.home-nav-overlay ul.menu li ul li a:hover:before,
+#header-shell.home-nav-overlay ul.menu li ul li a:hover:after,
+#header-shell.home-nav-overlay ul.menu li ul li a:focus i,
+#header-shell.home-nav-overlay ul.menu li ul li a:focus svg,
+#header-shell.home-nav-overlay ul.menu li ul li a:focus:before,
+#header-shell.home-nav-overlay ul.menu li ul li a:focus:after {
+  color: #ffffff !important;
+}
+
 /* Global paragraph typography: rounded style only for <p> text */
 p {
   font-family: "Nunito", "Quicksand", "Segoe UI", sans-serif;
@@ -8762,6 +9268,30 @@ p {
   position: relative;
   overflow: hidden;
   background: #89b99e !important;
+  padding: 40px 60px !important;
+}
+
+.reviews-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.reviews-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.reviews-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .reviews-section .reviews-title-main,
@@ -8805,15 +9335,110 @@ p {
 
 .reviews-section .google-stars-main {
   color: #ff8c42 !important;
+  order: 2;
+}
+
+.reviews-section .google-brand-white {
+  order: 1;
+}
+
+.reviews-section button {
+  text-align: center;
 }
 
 @media (max-width: 768px) {
+  .reviews-section {
+    padding: 30px 40px !important;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .reviews-left {
+    width: 100%;
+  }
+
+  .reviews-right {
+    width: 100%;
+  }
+
   .reviews-section .google-brand-white {
     font-size: 32px;
+    justify-content: center;
   }
 
   .reviews-section .google-brand-white i {
     font-size: 30px;
+  }
+
+  .reviews-section button {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .reviews-section {
+    padding: 25px 20px !important;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .reviews-left {
+    flex: 0 0 auto !important;
+    width: 100%;
+  }
+
+  .reviews-right {
+    flex: 0 0 auto !important;
+    width: 100%;
+  }
+
+  .reviews-section .google-brand-white {
+    font-size: 28px;
+    justify-content: center;
+  }
+
+  .reviews-section .google-brand-white i {
+    font-size: 26px;
+  }
+
+  .reviews-section button {
+    margin: 0 auto;
+  }
+}
+
+/* Large screens - keep original row layout */
+@media (min-width: 769px) {
+  .reviews-container {
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .reviews-left {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .reviews-right {
+    align-items: flex-start;
+  }
+
+  .reviews-section .google-stars-main {
+    order: 0;
+  }
+
+  .reviews-section .google-brand-white {
+    order: 0;
   }
 }
 
@@ -8965,5 +9590,257 @@ p {
 }
 
 
+/* --- GLOBAL RESPONSIVENESS & USER REFINEMENTS --- */
 
+/* ============================================================
+   1280px  - Hamburger menu trigger
+   ============================================================ */
+@media (max-width: 1280px) {
+  .hamburger-menu span {
+    background-color: #FF8C42 !important;
+  }
+  #header-shell > .header-grid,
+  #header-shell.interior-nav > .header-grid,
+  #header-shell.home-header-split > .header-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    padding: 10px 15px !important;
+    width: 100% !important;
+  }
+  #header-shell #logo,
+  #header-shell.interior-nav #logo,
+  #header-shell.home-header-split #logo {
+    display: block !important;
+    position: relative !important;
+    z-index: 1001 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex: 0 0 auto !important;
+  }
+  #header-shell #logo img {
+    max-width: 160px !important;
+    height: auto !important;
+  }
+  #header-shell .header-right {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+  }
+  .hamburger-menu {
+    display: flex !important;
+    position: relative !important;
+    z-index: 9999 !important;
+    margin: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .menu-content:not(.open) {
+    display: none !important;
+  }
+  .menu-content.open {
+    background-color: #0F1925 !important;
+  }
+}
 
+/* ============================================================
+   1024px  - Tablets and medium screens
+   ============================================================ */
+@media (max-width: 1024px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  h1 { font-size: 30px !important; line-height: 1.2 !important; }
+  h2 { font-size: 24px !important; line-height: 1.25 !important; }
+  h3 { font-size: 20px !important; line-height: 1.3 !important; }
+  h4, h5, h6 { font-size: 16px !important; line-height: 1.35 !important; }
+  p, li, td, th { font-size: 15px !important; line-height: 1.65 !important; }
+
+  button, .btn, .wp-block-button__link, .submit-btn, .sidebar-btn, .filter-btn {
+    font-size: 15px !important; padding: 11px 22px !important;
+    white-space: normal !important; height: auto !important;
+    min-height: 44px !important; line-height: 1.4 !important;
+  }
+
+  .home-hero-merged {
+    width: 100vw !important; max-width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    padding: 80px 0 20px 0 !important;
+  }
+  .home-hero-merged .wp-block-cover__inner-container {
+    width: 100% !important; max-width: 100% !important;
+    padding: 0 15px !important; box-sizing: border-box !important;
+  }
+  .home-hero-merged .hero-content-column {
+    background: rgba(255,255,255,0.6) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-radius: 16px !important; padding: 30px 22px !important;
+    box-sizing: border-box !important; width: 100% !important;
+    max-width: 100% !important; margin: 0 auto !important;
+    display: flex !important; flex-direction: column !important;
+    align-items: center !important; justify-content: center !important;
+    text-align: center !important;
+  }
+  .home-hero-merged .hero-title {
+    text-shadow: 1px 1px 2px rgba(150,150,150,0.6) !important;
+    color: #111827 !important; text-align: center !important;
+    font-size: 28px !important; line-height: 1.2 !important;
+  }
+  .home-hero-merged .hero-content-column p {
+    text-shadow: 1px 1px 2px rgba(150,150,150,0.6) !important;
+    color: #374151 !important; font-weight: 500 !important;
+    text-align: center !important;
+    margin-left: auto !important; margin-right: auto !important;
+    max-width: 100% !important; font-size: 15px !important;
+  }
+  .hero-cta-row {
+    justify-content: center !important; width: 100% !important; display: flex !important;
+  }
+
+  .contact-hero, .page-responsive-padding {
+    padding-top: 110px !important; padding-bottom: 50px !important; min-height: auto !important;
+  }
+  .wp-block-cover.alignfull.is-light:not(.home-hero-merged):not(.join-team-section):not(.bookkeeping-section) {
+    padding-top: 110px !important; padding-bottom: 50px !important; min-height: auto !important;
+  }
+  .bookkeeping-section { padding-top: 20px !important; }
+
+  .service-slider-track .service-card-v2 {
+    flex: 0 0 calc(50% - 20px) !important; max-width: calc(50% - 20px) !important;
+  }
+
+  .leadership-section-heading { margin-bottom: 70px !important; }
+  .leadership-stack { margin-top: 80px !important; }
+  .leadership-card, .our-people-page .wp-block-post {
+    margin-bottom: 50px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  }
+  .leadership-card:hover, .our-people-page .wp-block-post:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+  }
+  .leadership-card-expertise-grid {
+    display: grid !important; grid-template-columns: repeat(4,1fr) !important; gap: 8px !important;
+  }
+
+  .why-choose-card-title { font-size: 16px !important; }
+  .why-choose-card-desc  { font-size: 14px !important; }
+
+  .join-team-section { padding-top: 10px !important; }
+  .join-team-img {
+    max-width: 280px !important; display: block !important;
+    margin: 0 auto 20px auto !important; border-radius: 12px;
+  }
+  .career-section { text-align: center !important; }
+  .career-content { display:flex; flex-direction:column; align-items:center; justify-content:center; }
+
+  .consultation-section-modern > div > div { flex-direction: column !important; text-align: center !important; }
+  .consultation-section-modern .consultation-icon-wrapper { margin: 0 auto 15px auto !important; }
+  .consultation-btn-modern { margin: 15px auto 0 auto !important; }
+  .reviews-right { display: flex !important; justify-content: center !important; width: 100% !important; }
+  .write-review-btn, .btn-review-google {
+    margin: 15px auto !important; display: block !important; width: fit-content !important;
+  }
+
+  .footer-col-2, .footer-col-3 { display: none !important; }
+  .footer-contact-info .contact-item,
+  .footer-contact-info .contact-item a {
+    font-size: 14px !important; font-weight: 400 !important; line-height: 1.6 !important;
+  }
+  .footer-description { font-size: 13px !important; line-height: 1.55 !important; }
+
+  .newsletter-heading { font-size: 20px !important; margin-bottom: 10px !important; }
+  .newsletter-description { font-size: 13px !important; margin-bottom: 15px !important; line-height: 1.4 !important; }
+  .newsletter-form .form-group label { font-size: 13px !important; margin-bottom: 4px !important; }
+  .newsletter-form input { font-size: 13px !important; padding: 8px 12px !important; }
+  .newsletter-disclaimer { font-size: 11px !important; line-height: 1.3 !important; }
+  .newsletter-submit { font-size: 14px !important; padding: 10px 20px !important; }
+}
+
+/* ============================================================
+   600px  - Small phones
+   ============================================================ */
+@media (max-width: 600px) {
+  h1 { font-size: 26px !important; }
+  h2 { font-size: 21px !important; }
+  h3 { font-size: 18px !important; }
+  .service-slider-track .service-card-v2 { flex: 0 0 100% !important; max-width: 100% !important; }
+  .leadership-card-expertise-grid { grid-template-columns: repeat(2,1fr) !important; }
+}
+
+/* ============================================================
+   ADDITIONAL FIXES  - Footer & Bookkeeping page
+   ============================================================ */
+
+/* 1) On small/medium: hide the "Find an Accountant / Our People / Contact"
+      quick-link column entirely in the footer */
+@media (max-width: 1024px) {
+  .footer-col-3b {
+    display: none !important;
+  }
+
+  /* 2) Bookkeeping page two-column sections: stack on small/medium */
+  .bookkeeping-intro-grid {
+    flex-direction: column !important;
+  }
+  .bookkeeping-intro-grid > div {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Stack the service plans / difference card two-col grid */
+  .bookkeeping-services-section .container > div[style*="grid-template-columns"],
+  .bookkeeping-services-section [style*="gridTemplateColumns"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+  .bookkeeping-services-section .container > div > div {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Stack the "What is a fractional bookkeeper" two-col grid */
+  .bg-light .container > div[style*="grid-template-columns"],
+  .bg-light [style*="gridTemplateColumns"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+
+  /* Fix notice box padding on mobile */
+  .bookkeeping-services-section .container [style*="padding: '40px 50px'"],
+  div[style*="padding: '40px 50px'"] {
+    padding: 25px 20px !important;
+  }
+
+  /* The process floating card inside bookkeeping should not overflow */
+  .process-floating-card {
+    padding: 30px 20px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 3) Service card hover: ensure text stays readable (high specificity override) */
+  #root .service-card-v2:hover .text-box h3,
+  #root .service-card-v2:hover .text-box p,
+  #root .service-card-v2:hover .text-box span {
+    color: #ffffff !important;
+  }
+  #root .service-card-v2:hover .icon-box-fa {
+    background: #0F1925 !important;
+    color: #FF8C42 !important;
+  }
+  #root .service-card-v2:hover .icon-box-fa i {
+    color: #FF8C42 !important;
+  }
+}

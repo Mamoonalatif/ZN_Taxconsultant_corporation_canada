@@ -7,6 +7,7 @@ const Footer = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [firstName, setFirstName] = useState('');
+    const [expandedMenu, setExpandedMenu] = useState(null);
 
     const handleSocialClick = (e) => {
         e.preventDefault();
@@ -15,6 +16,10 @@ const Footer = () => {
         } else {
             navigate('/coming-soon');
         }
+    };
+
+    const toggleDropdown = (menuName) => {
+        setExpandedMenu(expandedMenu === menuName ? null : menuName);
     };
 
     const handleSubmit = (e) => {
@@ -64,8 +69,14 @@ const Footer = () => {
 
                         {/* Column 2: Company */}
                         <div className="footer-col-2">
-                            <div className="footer-heading">Company</div>
-                            <ul className="footer-menu">
+                            <button 
+                                className={`footer-heading footer-dropdown-btn ${expandedMenu === 'company' ? 'expanded' : ''}`}
+                                onClick={() => toggleDropdown('company')}
+                            >
+                                Company
+                                <i className="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul className={`footer-menu ${expandedMenu === 'company' ? 'show' : ''}`}>
                                 <li><Link to="/why-choose-zn">Why Choose Us</Link></li>
                                 <li><Link to="/our-people">Our People</Link></li>
                                 <li><Link to="/testimonials">Testimonials</Link></li>
@@ -76,8 +87,14 @@ const Footer = () => {
 
                         {/* Column 3: Accounting Services */}
                         <div className="footer-col-3">
-                            <div className="footer-heading">Accounting Services</div>
-                            <ul className="footer-menu footer-menu-underlined">
+                            <button 
+                                className={`footer-heading footer-dropdown-btn ${expandedMenu === 'accounting' ? 'expanded' : ''}`}
+                                onClick={() => toggleDropdown('accounting')}
+                            >
+                                Accounting Services
+                                <i className="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul className={`footer-menu footer-menu-underlined ${expandedMenu === 'accounting' ? 'show' : ''}`}>
                                 <li><Link to="/bookkeeping">Bookkeeping</Link></li>
                                 <li><Link to="/tax">Tax Prep & Planning</Link></li>
                                 <li><Link to="/acquisitions">Acquisitions & Startups</Link></li>
@@ -87,12 +104,21 @@ const Footer = () => {
                             </ul>
                         </div>
 
+                        {/* Column 3b: Small Screen Quick Links */}
+                        <div className="footer-col-3b">
+                            <ul className="footer-menu footer-menu-quick">
+                                <li><Link to="/find-accountant">Find an Accountant</Link></li>
+                                <li><Link to="/our-people">Our People</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
+                            </ul>
+                        </div>
+
                         {/* Column 4: Newsletter Signup */}
                         <div className="footer-col-4" style={{ flexBasis: '35%', minWidth: '320px' }}>
                             <div className="newsletter-signup">
-                                <h3 className="newsletter-heading">Sign Up for Insights!</h3>
+                                <h3 className="newsletter-heading">Get Updates</h3>
                                 <p className="newsletter-description">
-                                    Stay informed with expert tips, practical insights & more delivered right to your inbox.
+                                    Stay informed with expert tips & practical insights delivered to your inbox.
                                 </p>
 
                                 <form onSubmit={handleSubmit} className="newsletter-form">

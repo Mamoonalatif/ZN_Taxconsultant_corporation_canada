@@ -30,12 +30,12 @@ const Home = () => {
 
     const leadershipCards = [
         {
-            name: 'Zulqarnain Nasir',
+            name: 'Zulqarnain Naseer',
             title: 'Principal Accountant, CEO',
             focus: 'Partner',
             bio: 'Zulqarnain leads ZN Tax and Accounting Services Professional Corporation with a commitment to integrity and strategic excellence. He specializes in complex tax planning for SMEs and professional corporations of doctors and dentists.',
-            image: zulqarnainImage,
-            imageAlt: 'Zulqarnain Nasir',
+            avatarIcon: 'fa-user-tie',
+            imageAlt: 'Zulqarnain Naseer',
             expertise: [
                 { icon: 'fa-chart-line', label: 'Tax Strategy' },
                 { icon: 'fa-sliders', label: 'Financial Control' },
@@ -48,7 +48,7 @@ const Home = () => {
             title: 'Compliance and Financial Control Manager',
             focus: 'Manager',
             bio: 'Usman is a senior financial professional with extensive experience in banking, treasury management, and accounting. He works closely with businesses to deliver trusted advisory, audit, and accounting services tailored to their specific needs.',
-            avatarIcon: 'fa-user-tie',
+            image: zulqarnainImage,
             imageAlt: 'Usman Yousaf',
             expertise: [
                 { icon: 'fa-money-bill-trend-up', label: 'Cash Flow Management' },
@@ -150,7 +150,7 @@ const Home = () => {
             </div>
 
             {/* SECTION 2: SERVICES GRID */}
-            <div className="wp-block-cover alignfull is-light" style={{ paddingTop: '55px', paddingBottom: '40px' }}>
+            <div className="wp-block-cover alignfull is-light bookkeeping-section" style={{ paddingTop: '55px', paddingBottom: '40px' }}>
                 <span aria-hidden="true" className="wp-block-cover__background" style={{ backgroundColor: '#ffffff' }}></span>
                 <div className="wp-block-cover__inner-container container">
                     <h2 className="wp-block-heading" style={{ marginBottom: '15px', fontSize: '28px', fontWeight: '500' }}>Find the <strong style={{ fontWeight: '700' }}>Bookkeeping & Tax Services</strong> Your Small Business Needs</h2>
@@ -287,7 +287,7 @@ const Home = () => {
             {/* SECTION 3: Why Choose */}
             <div className="section-padding" style={{ backgroundColor: '#ffffff', padding: '70px 0 70px' }}>
                 <div className="container" style={{ maxWidth: '1250px' }}>
-                    <div style={{ marginBottom: '30px' }}>
+                    <div style={{ marginBottom: '30px', textAlign: 'center' }}>
                         <h2 className="wp-block-heading" style={{ margin: '0', fontSize: '28px', fontWeight: '500', color: '#111827' }}>
                             Why Choose <strong>ZN Tax and Accounting Services?</strong>
                         </h2>
@@ -314,14 +314,14 @@ const Home = () => {
             </div>
 
             {/* SECTION 4: Career & Work With Us */}
-            <div className="wp-block-cover alignfull is-light " style={{ backgroundColor: '#ffffff', paddingTop: '30px', paddingBottom: '30px' }}>
+            <div className="wp-block-cover alignfull is-light join-team-section" style={{ backgroundColor: '#ffffff', paddingTop: '30px', paddingBottom: '30px' }}>
                 <div className="wp-block-cover__inner-container container">
                     <div className="wp-block-columns are-vertically-aligned-center">
                         <div className="wp-block-column" style={{ flexBasis: '40%', paddingBottom: '0px', marginBottom: '0px' }}>
                             <span className="difference-tag" style={{ marginBottom: '0px' }}>Join Our Team</span>
                         </div>
-                        <div className="wp-block-column cta-modern career-section" style={{ flexBasis: '60%', marginLeft: '10px', paddingTop: '0px', background: '#ffffff' }}>
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="Professional Career" style={{ width: '100%' }} />
+                        <div className="wp-block-column cta-modern career-section" style={{ flexBasis: '60%', marginLeft: '10px', paddingTop: '0px', background: '#ffffff', textAlign: 'center' }}>
+                            <img className="join-team-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="Professional Career" style={{ width: '100%', margin: '0 auto' }} />
                             <div className="career-content" style={{ paddingTop: '0px' }}>
                                 <h3 style={{ fontSize: '20px', fontWeight: '500', marginBottom: '15px', lineHeight: '1.2' }}>Interested in a Career with <strong style={{ fontWeight: '700' }}>a Respected Tax Firm</strong>?</h3>
                                 <p style={{ color: '#666', marginBottom: '20px', fontSize: '13px' }}>Join a culture of professional growth and excellence. We are always looking for talented individuals to join our hierarchy of experts.</p>
