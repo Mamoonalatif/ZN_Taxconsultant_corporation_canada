@@ -48,14 +48,14 @@ const Guides = () => {
                                 overflow: 'hidden',
                                 boxShadow: '0 5px 15px rgba(0,0,0,0.03)'
                             }}>
-                                <div style={{ width: '150px', background: '#1F2937', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
+                                <div style={{ width: '150px', background: '#3A3A3A', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
                                     <i className="fa-solid fa-file-pdf" style={{ fontSize: '60px' }}></i>
                                 </div>
                                 <div style={{ padding: '30px', flex: 1 }}>
                                     <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#333', marginBottom: '10px' }}>{guide.title}</h3>
                                     <div style={{ fontSize: '14px', color: '#666', marginBottom: '20px' }}>{guide.pages} • {guide.type}</div>
                                     <button style={{
-                                        background: '#FF8C42',
+                                        background: '#D32F2F',
                                         color: '#fff',
                                         border: 'none',
                                         padding: '10px 25px',

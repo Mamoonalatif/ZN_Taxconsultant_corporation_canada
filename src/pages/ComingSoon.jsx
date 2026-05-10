@@ -27,7 +27,7 @@ const ComingSoon = () => {
                 ></div>
                 <div className="wp-block-cover__inner-container container text-center" style={{ position: 'relative', zIndex: 2, maxWidth: '800px' }}>
                     <div className="coming-soon-icon" style={{
-                        color: '#FF8C42',
+                        color: '#D32F2F',
                         marginBottom: '40px',
                         fontSize: '80px',
                         fontWeight: '300'
@@ -63,7 +63,7 @@ const ComingSoon = () => {
                                 className="wp-block-button__link wp-element-button"
                                 to="/"
                                 style={{
-                                    backgroundColor: '#FF8C42',
+                                    backgroundColor: '#D32F2F',
                                     color: '#fff',
                                     padding: '12px 35px',
                                     borderRadius: '50px',
@@ -83,7 +83,7 @@ const ComingSoon = () => {
                                 className="wp-block-button__link wp-element-button"
                                 to="/contact"
                                 style={{
-                                    backgroundColor: '#1F2937',
+                                    backgroundColor: '#3A3A3A',
                                     color: '#fff',
                                     padding: '12px 35px',
                                     borderRadius: '50px',
@@ -135,7 +135,7 @@ const ComingSoon = () => {
                                     borderRadius: '8px',
                                     textDecoration: 'none',
                                     transition: 'all 0.3s ease',
-                                    borderBottom: '4px solid #FF8C42',
+                                    borderBottom: '4px solid #D32F2F',
                                     flex: '1 1 200px',
                                     maxWidth: '250px'
                                 }}
@@ -148,7 +148,7 @@ const ComingSoon = () => {
                                     e.currentTarget.style.boxShadow = 'none';
                                 }}
                             >
-                                <div style={{ fontSize: '48px', marginBottom: '20px', color: '#FF8C42' }}>
+                                <div style={{ fontSize: '48px', marginBottom: '20px', color: '#D32F2F' }}>
                                     <i className={`fa-solid ${service.icon}`}></i>
                                 </div>
                                 <h3 style={{ fontSize: '20px', margin: 0, color: '#333', fontWeight: '700' }}>

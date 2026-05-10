@@ -25,13 +25,13 @@ const NotFound = () => {
                     }}
                 ></div>
                 <div className="container" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
-                    <h1 style={{ fontSize: '80px', fontWeight: '700', color: '#1F2937', marginBottom: '20px' }}>404</h1>
+                    <h1 style={{ fontSize: '80px', fontWeight: '700', color: '#3A3A3A', marginBottom: '20px' }}>404</h1>
                     <h2 style={{ fontSize: '32px', fontWeight: '300', color: '#333', marginBottom: '30px' }}>Oops! The page you're looking for <strong>doesn't exist.</strong></h2>
                     <p style={{ fontSize: '18px', color: '#666', marginBottom: '40px' }}>
                         It looks like the link might be broken or the page has been moved.
                     </p>
                     <div className="wp-block-buttons" style={{ justifyContent: 'center' }}>
-                        <Link className="wp-block-button__link wp-element-button" to="/" style={{ background: '#FF8C42', padding: '15px 40px' }}>
+                        <Link className="wp-block-button__link wp-element-button" to="/" style={{ background: '#D32F2F', padding: '15px 40px' }}>
                             Back to Homepage
                         </Link>
                     </div>

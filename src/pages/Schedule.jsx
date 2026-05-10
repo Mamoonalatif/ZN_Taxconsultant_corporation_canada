@@ -189,7 +189,7 @@ const Schedule = () => {
                                     if (footerForm) footerForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
                                 }}
                                 style={{
-                                    background: '#FF8C42',
+                                    background: '#D32F2F',
                                     color: '#fff',
                                     padding: '12px 30px',
                                     borderRadius: '50px',

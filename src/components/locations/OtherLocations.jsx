@@ -18,7 +18,7 @@ const OtherLocations = ({ currentLocation }) => {
                 className="wp-block-cover__image-background has-parallax"
                 style={{ backgroundImage: `url(${whiteBg})`, backgroundPosition: '50% 50%', backgroundAttachment: 'fixed', opacity: 1, zIndex: 0 }}
             ></div>
-            <span aria-hidden="true" className="wp-block-cover__background" style={{ backgroundColor: '#111827', opacity: 0.9, zIndex: 1 }}></span>
+            <span aria-hidden="true" className="wp-block-cover__background" style={{ backgroundColor: '#1A1A1A', opacity: 0.9, zIndex: 1 }}></span>
             <div className="container text-center" style={{ position: 'relative', zIndex: 2 }}>
                 <h2>Four More Locations to Serve Your Business</h2>
                 <p>

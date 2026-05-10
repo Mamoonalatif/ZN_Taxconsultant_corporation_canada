@@ -30,7 +30,7 @@ const GoogleReviews = () => {
                                     <i className="fa-brands fa-google" aria-hidden="true"></i>
                                     <span>oogle</span>
                                 </span>
-                                <span className="reviews-title-sub">Reviews</span>
+                                <span className="reviews-title-sub">                Reviews</span>
                             </h2>
                             <div className="google-stars-main">★★★★★</div>
                         </div>
@@ -86,7 +86,7 @@ const GoogleReviews = () => {
                                 <div style={{ fontSize: '60px', color: '#4CAF50', marginBottom: '20px' }}>
                                     <i className="fa-solid fa-circle-check"></i>
                                 </div>
-                                <h3 style={{ fontSize: '28px', color: '#1F2937' }}>Thank You!</h3>
+                                <h3 style={{ fontSize: '28px', color: '#3A3A3A' }}>Thank You!</h3>
                                 <p style={{ fontSize: '18px', color: '#555' }}>Your review has been successfully submitted and will be visible on Google after moderation.</p>
                             </div>
                         )}

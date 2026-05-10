@@ -58,7 +58,7 @@ const Videos = () => {
                                         {vid.duration}
                                     </div>
                                     {/* Placeholder overlay */}
-                                    <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(45deg, #1F2937, #000)', opacity: 0.6 }}></div>
+                                    <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(45deg, #3A3A3A, #000)', opacity: 0.6 }}></div>
                                 </div>
                                 <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#333', marginTop: '20px', lineHeight: '1.4' }}>{vid.title}</h3>
                             </div>

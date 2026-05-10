@@ -85,13 +85,13 @@ const Careers = () => {
                     <div className="wp-block-buttons" style={{ marginTop: '20px' }}>
                         <div className="wp-block-button">
                             <Link className="wp-block-button__link wp-element-button" to="/contact" style={{
-                                backgroundColor: '#FF8C42',
+                                backgroundColor: '#D32F2F',
                                 color: '#fff',
                                 borderRadius: '30px',
                                 padding: '12px 35px',
                                 fontWeight: 'bold',
                                 fontSize: '15px',
-                                boxShadow: '0 4px 15px rgba(255, 140, 66, 0.3)',
+                                boxShadow: '0 4px 15px rgba(211, 47, 47, 0.3)',
                                 transition: 'all 0.3s ease'
                             }}>See Job Openings</Link>
                         </div>
@@ -136,12 +136,12 @@ const Careers = () => {
                                         'Fun Culture'
                                     ].map((benefit, idx) => (
                                         <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', color: '#333', fontSize: '12px', lineHeight: '1.4' }}>
-                                            <i className="fa-solid fa-check" style={{ color: '#28a745', marginRight: '8px', marginTop: '3px', fontSize: '12px' }}></i>
+                                            <i className="fa-solid fa-check" style={{ color: '#E57373', marginRight: '8px', marginTop: '3px', fontSize: '12px' }}></i>
                                             {benefit}
                                         </li>
                                     ))}
                                 </ul>
-                                <p style={{ marginTop: '20px', fontSize: '11px', color: '#666' }}>For more info, <a href="/contact" style={{ color: '#FF8C42', textDecoration: 'underline' }}>contact us</a> today.</p>
+                                <p style={{ marginTop: '20px', fontSize: '11px', color: '#666' }}>For more info, <a href="/contact" style={{ color: '#D32F2F', textDecoration: 'underline' }}>contact us</a> today.</p>
                             </div>
                         </div>
 
@@ -159,17 +159,17 @@ const Careers = () => {
                             </p>
                             <div className="values-grid">
                                 <div className="value-item hover-pop-image" style={{ textAlign: 'center', backgroundColor: '#fff', border: '1px solid #f0f0f0', boxShadow: '0 15px 30px rgba(0,0,0,0.05)' }}>
-                                    <div style={{ color: '#1F2937' }}><i className="fa-solid fa-heart"></i></div>
+                                    <div style={{ color: '#3A3A3A' }}><i className="fa-solid fa-heart"></i></div>
                                     <h3 style={{ color: '#000', fontWeight: '700' }}>Honesty</h3>
                                     <p>Full transparency and integrity in every interaction with clients and coworkers.</p>
                                 </div>
                                 <div className="value-item hover-pop-image" style={{ textAlign: 'center', backgroundColor: '#fff', border: '1px solid #f0f0f0', boxShadow: '0 15px 30px rgba(0,0,0,0.05)' }}>
-                                    <div style={{ color: '#1F2937' }}><i className="fa-solid fa-handshake-angle"></i></div>
+                                    <div style={{ color: '#3A3A3A' }}><i className="fa-solid fa-handshake-angle"></i></div>
                                     <h3 style={{ color: '#000', fontWeight: '700' }}>Humility</h3>
                                     <p>Taking accountability and valuing the input and advice of our teammates.</p>
                                 </div>
                                 <div className="value-item hover-pop-image" style={{ textAlign: 'center', backgroundColor: '#fff', border: '1px solid #f0f0f0', boxShadow: '0 15px 30px rgba(0,0,0,0.05)' }}>
-                                    <div style={{ color: '#1F2937' }}><i className="fa-solid fa-business-time"></i></div>
+                                    <div style={{ color: '#3A3A3A' }}><i className="fa-solid fa-business-time"></i></div>
                                     <h3 style={{ color: '#000', fontWeight: '700' }}>Dependability</h3>
                                     <p>Being responsive, staying organized, and following through consistently.</p>
                                 </div>
@@ -196,7 +196,7 @@ const Careers = () => {
                                     { title: 'Tax Preparation', text: 'Individual, fiduciary, corporate, and partnership returns.' }
                                 ].map((skill, i) => (
                                     <li key={i} style={{ fontSize: '12px', lineHeight: '1.6' }}>
-                                        <div style={{ color: '#FF8C42', fontWeight: '700', marginBottom: '5px' }}>{skill.title}</div>
+                                        <div style={{ color: '#D32F2F', fontWeight: '700', marginBottom: '5px' }}>{skill.title}</div>
                                         <div style={{ color: '#555' }}>{skill.text}</div>
                                     </li>
                                 ))}
@@ -214,7 +214,7 @@ const Careers = () => {
                                     { title: 'Self-reliance', text: 'Juggling multiple engagements efficiently.' }
                                 ].map((skill, i) => (
                                     <li key={i} style={{ fontSize: '12px', lineHeight: '1.6' }}>
-                                        <div style={{ color: '#FF8C42', fontWeight: '700', marginBottom: '5px' }}>{skill.title}</div>
+                                        <div style={{ color: '#D32F2F', fontWeight: '700', marginBottom: '5px' }}>{skill.title}</div>
                                         <div style={{ color: '#555' }}>{skill.text}</div>
                                     </li>
                                 ))}
@@ -227,7 +227,7 @@ const Careers = () => {
 
 
             {/* SERVICES DELIVERED (Grid matching homepage) */}
-            <div className="wp-block-cover alignfull has-parallax" style={{ color: '#fff', backgroundColor: '#1F2937', paddingTop: '60px', paddingBottom: '60px' }}>
+            <div className="wp-block-cover alignfull has-parallax" style={{ color: '#fff', backgroundColor: '#3A3A3A', paddingTop: '60px', paddingBottom: '60px' }}>
                 <div className="container">
                     <h2 className="text-center" style={{ fontSize: '32px', marginBottom: '10px', color: '#fff', fontWeight: '700' }}>The Services <strong>We Deliver</strong></h2>
                     <p className="text-center" style={{ marginBottom: '40px', fontSize: '16px', opacity: 0.9 }}>Our clients receive a full range of services from our accounting professionals:</p>
@@ -247,7 +247,7 @@ const Careers = () => {
                                 </div>
                                 <div className="text-box">
                                     <h3 style={{ color: '#000', margin: 0 }}>{s.title}</h3>
-                                    <Link to={s.link} style={{ color: '#1F2937', fontWeight: '600' }}>Learn More</Link>
+                                    <Link to={s.link} style={{ color: '#3A3A3A', fontWeight: '600' }}>Learn More</Link>
                                 </div>
                             </div>
                         ))}
@@ -263,7 +263,7 @@ const Careers = () => {
                         <div className="wp-block-buttons" style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
                             <Link className="wp-block-button__link" to="/contact" style={{
                                 padding: '15px 40px',
-                                backgroundColor: '#FF8C42',
+                                backgroundColor: '#D32F2F',
                                 color: '#fff',
                                 borderRadius: '30px',
                                 fontWeight: '700',
@@ -271,7 +271,7 @@ const Careers = () => {
                             }}>View Open Positions</Link>
                             <Link className="wp-block-button__link" to="/contact" style={{
                                 padding: '15px 40px',
-                                backgroundColor: '#FF8C42',
+                                backgroundColor: '#D32F2F',
                                 color: '#fff',
                                 borderRadius: '30px',
                                 fontWeight: '700',

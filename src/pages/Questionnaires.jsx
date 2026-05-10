@@ -49,15 +49,15 @@ const Questionnaires = () => {
                                 transition: 'all 0.3s ease',
                                 hover: { transform: 'translateY(-5px)' }
                             }}>
-                                <div style={{ fontSize: '14px', color: '#FF8C42', fontWeight: '700', marginBottom: '15px', textTransform: 'uppercase' }}>
+                                <div style={{ fontSize: '14px', color: '#D32F2F', fontWeight: '700', marginBottom: '15px', textTransform: 'uppercase' }}>
                                     Estimated Time: {form.time}
                                 </div>
-                                <h3 style={{ fontSize: '24px', fontWeight: '700', color: '#1F2937', marginBottom: '20px' }}>{form.title}</h3>
+                                <h3 style={{ fontSize: '24px', fontWeight: '700', color: '#3A3A3A', marginBottom: '20px' }}>{form.title}</h3>
                                 <p style={{ fontSize: '15px', color: '#666', marginBottom: '30px', lineHeight: '1.6' }}>
                                     Complete this digital form to provide our team with the necessary information to serve you effectively.
                                 </p>
                                 <button style={{
-                                    background: '#1F2937',
+                                    background: '#3A3A3A',
                                     color: '#fff',
                                     border: 'none',
                                     padding: '12px 30px',

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logoWithoutBg from '../assets/images/logo2.png';
+import logoWithoutBg from '../assets/images/logo.png';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
@@ -30,8 +30,7 @@ const Footer = () => {
     };
 
     return (
-        <>
-            <footer id="footer-wrapper">
+        <footer id="footer-wrapper">
                 <div id="footer" className="container">
                     <div className="footer-columns">
                         {/* Column 1: Logo, Info & Socials */}
@@ -123,7 +122,7 @@ const Footer = () => {
 
                                 <form onSubmit={handleSubmit} className="newsletter-form">
                                     <div className="form-group">
-                                        <label htmlFor="newsletter-email"><span style={{ color: '#FF8C42', fontWeight: 'bold' }}>*</span> Email</label>
+                                        <label htmlFor="newsletter-email"><span style={{ color: '#D32F2F', fontWeight: 'bold' }}>*</span> Email</label>
                                         <input
                                             type="email"
                                             id="newsletter-email"
@@ -134,7 +133,7 @@ const Footer = () => {
                                     </div>
 
                                     <div className="form-group">
-                                        <label htmlFor="newsletter-firstname"><span style={{ color: '#FF8C42', fontWeight: 'bold' }}>*</span> First Name</label>
+                                        <label htmlFor="newsletter-firstname"><span style={{ color: '#D32F2F', fontWeight: 'bold' }}>*</span> First Name</label>
                                         <input
                                             type="text"
                                             id="newsletter-firstname"
@@ -175,11 +174,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-
-
-        </>
     );
 };
 
 export default Footer;
-

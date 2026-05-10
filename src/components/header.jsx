@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 // Import logo
 import logoImg from '../assets/images/logo.png';
-import logoWithoutBg from '../assets/images/logo2.png';
+import logoWithoutBg from '../assets/images/logo.png';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,8 +29,8 @@ const Header = () => {
             const footerHeight = footer ? footer.offsetHeight : 300;
             const scrollPosition = window.scrollY + window.innerHeight;
             const documentHeight = document.documentElement.scrollHeight;
-            
-            setIsAtBottom(scrollPosition >= documentHeight - footerHeight + 50);
+            const isScrollable = documentHeight > window.innerHeight + 100;
+            setIsAtBottom(isScrollable && scrollPosition >= documentHeight - footerHeight + 50);
         };
 
         onScroll();
@@ -71,9 +71,9 @@ const Header = () => {
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
                             aria-label="Toggle menu"
                         >
-                            <span style={{ backgroundColor: '#FF8C42' }}></span>
-                            <span style={{ backgroundColor: '#FF8C42' }}></span>
-                            <span style={{ backgroundColor: '#FF8C42' }}></span>
+                            <span style={{ backgroundColor: '#D32F2F' }}></span>
+                            <span style={{ backgroundColor: '#D32F2F' }}></span>
+                            <span style={{ backgroundColor: '#D32F2F' }}></span>
                         </button>
                         <div className={`menu-content ${isMenuOpen ? 'open' : ''}`}>
                             <nav className="right">

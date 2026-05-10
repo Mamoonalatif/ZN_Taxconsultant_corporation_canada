@@ -95,7 +95,7 @@ const OurPeople = () => {
                                             />
                                         </div>
                                         <div style={{ flex: '1 1 280px', minWidth: '0' }}>
-                                            <h3 style={{ fontSize: '24px', fontWeight: '700', color: '#FF8C42', textDecoration: 'none', borderBottom: 'none', marginTop: '0' }}>{person.name}</h3>
+                                            <h3 style={{ fontSize: '24px', fontWeight: '700', color: '#D32F2F', textDecoration: 'none', borderBottom: 'none', marginTop: '0' }}>{person.name}</h3>
                                             <div style={{ fontSize: '14px', fontWeight: '700', textTransform: 'uppercase', color: '#666', margin: '10px 0 20px', borderBottom: '2px solid #eee', paddingBottom: '10px' }}>{person.title}</div>
                                             <p style={{ fontSize: '15px', color: '#555', lineHeight: '1.7' }}>{person.bio}</p>
                                         </div>
@@ -105,7 +105,7 @@ const OurPeople = () => {
                                         <div style={{
                                             width: '80px',
                                             height: '80px',
-                                            background: '#0F1925',
+                                            background: '#3A3A3A',
                                             color: '#fff',
                                             borderRadius: '50%',
                                             display: 'flex',
@@ -116,7 +116,7 @@ const OurPeople = () => {
                                         }}>
                                             <i className={`fa-solid ${person.icon}`}></i>
                                         </div>
-                                        <h3 style={{ fontSize: '24px', fontWeight: '700', color: '#FF8C42', textDecoration: 'none', borderBottom: 'none' }}>{person.name}</h3>
+                                        <h3 style={{ fontSize: '24px', fontWeight: '700', color: '#D32F2F', textDecoration: 'none', borderBottom: 'none' }}>{person.name}</h3>
                                         <div style={{ fontSize: '14px', fontWeight: '700', textTransform: 'uppercase', color: '#666', margin: '10px 0 20px', borderBottom: '2px solid #eee', paddingBottom: '10px' }}>{person.title}</div>
                                         <p style={{ fontSize: '15px', color: '#555', lineHeight: '1.7' }}>{person.bio}</p>
                                     </>
@@ -136,8 +136,8 @@ const OurPeople = () => {
                     <div className="values-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '30px' }}>
                         {values.map((v, i) => (
                             <div key={i} className="value-item" style={{ background: '#fff', padding: '40px', borderRadius: '4px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)', textAlign: 'center' }}>
-                                <i className={`fa-solid ${v.icon}`} style={{ fontSize: '40px', color: '#FF8C42', marginBottom: '20px' }}></i>
-                                <h3 style={{ color: '#1F2937', marginBottom: '15px', fontSize: '22px' }}>{v.title}</h3>
+                                <i className={`fa-solid ${v.icon}`} style={{ fontSize: '40px', color: '#D32F2F', marginBottom: '20px' }}></i>
+                                <h3 style={{ color: '#3A3A3A', marginBottom: '15px', fontSize: '22px' }}>{v.title}</h3>
                                 <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#666' }}>{v.text}</p>
                             </div>
                         ))}
@@ -154,7 +154,7 @@ const OurPeople = () => {
                     <p style={{ fontSize: '18px', color: '#555', maxWidth: '800px', margin: '0 auto 40px', lineHeight: '1.7' }}>
                         We're always looking for talented professionals who share our values and our commitment to client success.
                     </p>
-                    <Link className="wp-block-button__link wp-element-button" to="/careers" style={{ background: '#FF8C42', padding: '15px 45px' }}>
+                    <Link className="wp-block-button__link wp-element-button" to="/careers" style={{ background: '#D32F2F', padding: '15px 45px' }}>
                         View Career Opportunities
                     </Link>
                 </div>

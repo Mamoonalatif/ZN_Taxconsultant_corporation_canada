@@ -46,12 +46,12 @@ const TaxPreparation = () => {
                             </p>
                             <div className="wp-block-buttons" style={{ marginTop: '30px' }}>
                                 <Link className="wp-block-button__link wp-element-button" to="/contact" style={{
-                                    background: '#FF8C42',
+                                    background: '#D32F2F',
                                     color: '#fff',
                                     padding: '15px 40px',
                                     borderRadius: '50px',
                                     fontWeight: 'bold',
-                                    boxShadow: '0 10px 20px rgba(255, 140, 66, 0.2)'
+                                    boxShadow: '0 10px 20px rgba(211, 47, 47, 0.2)'
                                 }}>
                                     Schedule Your Consultation
                                 </Link>
@@ -168,7 +168,7 @@ const TaxPreparation = () => {
                                         'Succession Planning'
                                     ].map((item, i) => (
                                         <li key={i} style={{ marginBottom: '10px', fontSize: '13px', color: '#444', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                            <span style={{ color: '#FF8C42' }}>•</span> {item}
+                                            <span style={{ color: '#D32F2F' }}>•</span> {item}
                                         </li>
                                     ))}
                                 </ul>
@@ -183,12 +183,12 @@ const TaxPreparation = () => {
                                         'Tax Reform Impact Analysis'
                                     ].map((item, i) => (
                                         <li key={i} style={{ marginBottom: '10px', fontSize: '13px', color: '#444', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                            <span style={{ color: '#FF8C42' }}>•</span> {item}
+                                            <span style={{ color: '#D32F2F' }}>•</span> {item}
                                         </li>
                                     ))}
                                 </ul>
                             </div>
-                            <div style={{ background: '#fcfcfc', borderLeft: '4px solid #FF8C42', padding: '20px', fontSize: '14px', color: '#555', lineHeight: '1.6' }}>
+                            <div style={{ background: '#fcfcfc', borderLeft: '4px solid #D32F2F', padding: '20px', fontSize: '14px', color: '#555', lineHeight: '1.6' }}>
                                 <p>Tax planning services help businesses like yours maximize their tax efficiency while remaining compliant with tax laws. When we help you implement the appropriate strategies, you can potentially reduce your tax burden, improve cash flow, and increase your bottom line.</p>
                             </div>
                         </div>
@@ -233,7 +233,7 @@ const TaxPreparation = () => {
                                 { title: 'Dedicated Client Support', text: 'We take pride in building lasting relationships with our clients, offering responsive support and clear communication every step of the way.' }
                             ].map((item, i) => (
                                 <div key={i} style={{ display: 'flex', gap: '20px', background: 'rgba(255,255,255,0.7)', padding: '25px', borderRadius: '4px', boxShadow: '0 5px 15px rgba(0,0,0,0.03)' }}>
-                                    <div style={{ color: '#FF8C42', fontSize: '24px', fontWeight: 'bold' }}>{i + 1}</div>
+                                    <div style={{ color: '#D32F2F', fontSize: '24px', fontWeight: 'bold' }}>{i + 1}</div>
                                     <div>
                                         <h4 style={{ color: '#333', marginBottom: '10px', fontWeight: '600', fontSize: '18px' }}>{item.title}</h4>
                                         <p style={{ fontSize: '14px', color: '#555', lineHeight: '1.6', margin: 0 }}>{item.text}</p>
@@ -251,7 +251,7 @@ const TaxPreparation = () => {
             {/* SECTION 4: Much More (Blue Parallax) */}
             <div className="section-padding" style={{
                 position: 'relative',
-                backgroundColor: '#1F2937',
+                backgroundColor: '#3A3A3A',
                 color: '#fff',
                 textAlign: 'center'
             }}>
@@ -277,9 +277,9 @@ const TaxPreparation = () => {
                                 <div className="text-box">
                                     <h3 style={{ margin: 0 }}>{s.title}</h3>
                                     {s.external ? (
-                                        <a href={s.link} target="_blank" rel="noopener noreferrer" style={{ color: '#1F2937', fontWeight: '600' }}>Learn More</a>
+                                        <a href={s.link} target="_blank" rel="noopener noreferrer" style={{ color: '#3A3A3A', fontWeight: '600' }}>Learn More</a>
                                     ) : (
-                                        <Link to={s.link} style={{ color: '#1F2937', fontWeight: '600' }}>Learn More</Link>
+                                        <Link to={s.link} style={{ color: '#3A3A3A', fontWeight: '600' }}>Learn More</Link>
                                     )}
                                 </div>
                             </div>
@@ -291,10 +291,10 @@ const TaxPreparation = () => {
                     </p>
 
                     <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
-                        <Link className="wp-block-button__link wp-element-button" to="/find-accountant" style={{ background: '#FF8C42' }}>
+                        <Link className="wp-block-button__link wp-element-button" to="/find-accountant" style={{ background: '#D32F2F' }}>
                             Find An Accountant
                         </Link>
-                        <Link className="wp-block-button__link wp-element-button" to="/contact" style={{ background: '#FF8C42' }}>
+                        <Link className="wp-block-button__link wp-element-button" to="/contact" style={{ background: '#D32F2F' }}>
                             Find A Bookkeeper
                         </Link>
                     </div>
@@ -309,10 +309,10 @@ const TaxPreparation = () => {
                     </h2>
                     <div style={{ fontSize: '15px', color: '#555', lineHeight: '1.7', maxWidth: '900px', margin: '0 auto 40px auto' }}>
                         <p style={{ marginBottom: '15px' }}>
-                            We can relieve tax time pressure and help you <Link to="/consulting" style={{ color: '#FF8C42', textDecoration: 'underline' }}>develop a strategic approach</Link> to handling your tax obligations. Make an appointment at one of our four locations in <Link to="/harrisburg" style={{ color: '#FF8C42', textDecoration: 'underline' }}>Harrisburg</Link>, <Link to="/mechanicsburg" style={{ color: '#FF8C42', textDecoration: 'underline' }}>Mechanicsburg</Link>, <Link to="/myerstown" style={{ color: '#FF8C42', textDecoration: 'underline' }}>Myerstown</Link>, or <Link to="/lancaster" style={{ color: '#FF8C42', textDecoration: 'underline' }}>Lancaster</Link>, PA.
+                            We can relieve tax time pressure and help you <Link to="/consulting" style={{ color: '#D32F2F', textDecoration: 'underline' }}>develop a strategic approach</Link> to handling your tax obligations. Make an appointment at one of our four locations in <Link to="/harrisburg" style={{ color: '#D32F2F', textDecoration: 'underline' }}>Harrisburg</Link>, <Link to="/mechanicsburg" style={{ color: '#D32F2F', textDecoration: 'underline' }}>Mechanicsburg</Link>, <Link to="/myerstown" style={{ color: '#D32F2F', textDecoration: 'underline' }}>Myerstown</Link>, or <Link to="/lancaster" style={{ color: '#D32F2F', textDecoration: 'underline' }}>Lancaster</Link>, PA.
                         </p>
                     </div>
-                    <Link className="wp-block-button__link wp-element-button" to="/contact" style={{ background: '#FF8C42', padding: '15px 50px' }}>
+                    <Link className="wp-block-button__link wp-element-button" to="/contact" style={{ background: '#D32F2F', padding: '15px 50px' }}>
                         Contact ZN Tax and Accounting Services
                     </Link>
                 </div>

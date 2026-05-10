@@ -77,7 +77,7 @@ const QuickBooks = () => {
                     <div className="wp-block-buttons" style={{ marginTop: '30px', display: 'flex', justifyContent: 'center' }}>
                         <div className="wp-block-button">
                             <Link className="wp-block-button__link wp-element-button" to="/contact" style={{
-                                background: '#FF8C42',
+                                background: '#D32F2F',
                                 color: '#fff',
                                 padding: '15px 40px',
                                 borderRadius: '50px',
@@ -116,10 +116,10 @@ const QuickBooks = () => {
                             </h2>
                             <div style={{ fontSize: '15px', color: '#555', lineHeight: '1.8' }}>
                                 <p style={{ marginBottom: '20px' }}>
-                                    Looking for QuickBooks® services that go beyond the basics? When you purchase QuickBooks® through ZN Tax and Accounting Services, you may be eligible for an exclusive monthly discount—but the advantages do not stop there. By combining our professional QuickBooks® setup services with top-tier online <Link to="/bookkeeping" style={{ color: '#FF8C42', textDecoration: 'underline' }}>bookkeeping services</Link>, we help you streamline your financial management and gain more control over your numbers.
+                                    Looking for QuickBooks® services that go beyond the basics? When you purchase QuickBooks® through ZN Tax and Accounting Services, you may be eligible for an exclusive monthly discount—but the advantages do not stop there. By combining our professional QuickBooks® setup services with top-tier online <Link to="/bookkeeping" style={{ color: '#D32F2F', textDecoration: 'underline' }}>bookkeeping services</Link>, we help you streamline your financial management and gain more control over your numbers.
                                 </p>
                                 <p style={{ marginBottom: '40px' }}>
-                                    At ZN Tax and Accounting Services, we utilize your QuickBooks® account to deliver high-quality bookkeeping for QuickBooks® and <Link to="/tax" style={{ color: '#FF8C42', textDecoration: 'underline' }}>accounting services</Link>. Here are eight compelling benefits you’ll enjoy when we handle your books using QuickBooks® services:
+                                    At ZN Tax and Accounting Services, we utilize your QuickBooks® account to deliver high-quality bookkeeping for QuickBooks® and <Link to="/tax" style={{ color: '#D32F2F', textDecoration: 'underline' }}>accounting services</Link>. Here are eight compelling benefits you’ll enjoy when we handle your books using QuickBooks® services:
                                 </p>
                             </div>
 
@@ -131,7 +131,7 @@ const QuickBooks = () => {
                             <div style={{
                                 background: '#f8f9fa',
                                 padding: '40px',
-                                borderLeft: '5px solid #FF8C42',
+                                borderLeft: '5px solid #D32F2F',
                                 boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
                                 borderRadius: '4px'
                             }}>
@@ -142,7 +142,7 @@ const QuickBooks = () => {
                                     You may qualify for a monthly discount when you choose ZN Tax and Accounting Services as your bookkeeping or accounting partner with QuickBooks® services. Get in touch with us to see if you qualify.
                                 </p>
                                 <Link className="wp-block-button__link wp-element-button" to="/contact" style={{
-                                    background: '#FF8C42',
+                                    background: '#D32F2F',
                                     color: '#fff',
                                     padding: '12px 30px',
                                     borderRadius: '50px',
@@ -158,7 +158,7 @@ const QuickBooks = () => {
 
                     <div className="quickbooks-ready-section" style={{ marginTop: '80px', textAlign: 'center', borderTop: '1px solid #eee', paddingTop: '40px' }}>
                         <p style={{ fontSize: '14px', color: '#333' }}>
-                            Are you ready to experience all the benefits of QuickBooks® services? <Link to="/contact" style={{ color: '#FF8C42', fontWeight: 'bold', textDecoration: 'underline' }}>Contact ZN Tax and Accounting Services</Link> today to learn more.
+                            Are you ready to experience all the benefits of QuickBooks® services? <Link to="/contact" style={{ color: '#D32F2F', fontWeight: 'bold', textDecoration: 'underline' }}>Contact ZN Tax and Accounting Services</Link> today to learn more.
                         </p>
                     </div>
                 </div>
@@ -235,7 +235,7 @@ const QuickBooks = () => {
                                     { title: 'Long-Term Partnership', text: 'We’re not here for a one-time fix—we’re here to help your business grow.' }
                                 ].map((item, i) => (
                                     <li key={i} style={{ marginBottom: '15px', display: 'flex', gap: '10px', fontSize: '12px' }}>
-                                        <span style={{ color: '#FF8C42', fontWeight: 'bold' }}>•</span>
+                                        <span style={{ color: '#D32F2F', fontWeight: 'bold' }}>•</span>
                                         <span><strong>{item.title}:</strong> {item.text}</span>
                                     </li>
                                 ))}
@@ -255,11 +255,11 @@ const QuickBooks = () => {
                         </h2>
                         <div style={{ fontSize: '15px', color: '#444', lineHeight: '1.7', marginBottom: '40px' }}>
                             <p style={{ marginBottom: '20px' }}>Before you make a QuickBooks® purchase, contact ZN Tax and Accounting Services to see what type of discount we might be able to arrange for you. Be sure to ask about how our QuickBooks® bookkeeping services and QuickBooks® accounting services can make your business more efficient.</p>
-                            <p style={{ fontWeight: '600' }}>We have a member of <Link to="/contact" style={{ color: '#FF8C42', textDecoration: 'underline' }}>the ZN Tax and Accounting Services team</Link> ready to speak to you.</p>
+                            <p style={{ fontWeight: '600' }}>We have a member of <Link to="/contact" style={{ color: '#D32F2F', textDecoration: 'underline' }}>the ZN Tax and Accounting Services team</Link> ready to speak to you.</p>
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
                             <Link className="wp-block-button__link wp-element-button" to="/contact" style={{
-                                background: '#FF8C42',
+                                background: '#D32F2F',
                                 color: '#fff',
                                 padding: '15px 40px',
                                 borderRadius: '50px',

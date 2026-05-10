@@ -288,19 +288,19 @@ const Home = () => {
             <div className="section-padding" style={{ backgroundColor: '#ffffff', padding: '70px 0 70px' }}>
                 <div className="container" style={{ maxWidth: '1250px' }}>
                     <div style={{ marginBottom: '30px', textAlign: 'center' }}>
-                        <h2 className="wp-block-heading" style={{ margin: '0', fontSize: '28px', fontWeight: '500', color: '#111827' }}>
+                        <h2 className="wp-block-heading" style={{ margin: '0', fontSize: '28px', fontWeight: '500', color: '#1A1A1A' }}>
                             Why Choose <strong>ZN Tax and Accounting Services?</strong>
                         </h2>
                     </div>
 
                     <div className="why-choose-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: '30px' }}>
                         {whyChoosePillars.map((item, i) => (
-                            <article key={i} className="why-choose-card" style={{ color: '#1f2937', background: '#f8fafc', border: '1px solid #e5e7eb', borderRadius: '14px', padding: '24px 22px 20px', boxShadow: '0 10px 24px rgba(15,25,37,0.08)', textAlign: 'center' }}>
+                            <article key={i} className="why-choose-card" style={{ color: '#3A3A3A', background: '#f8fafc', border: '1px solid #e5e7eb', borderRadius: '14px', padding: '24px 22px 20px', boxShadow: '0 10px 24px rgba(15,25,37,0.08)', textAlign: 'center' }}>
                                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '14px' }}>
-                                    <div className="why-choose-card-icon" style={{ width: '54px', height: '54px', minWidth: '54px', borderRadius: '50%', border: '1px solid rgba(255, 140, 66, 0.6)', background: 'rgba(255, 140, 66, 0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                        <i className={`fa-solid ${item.icon}`} style={{ color: '#FF8C42', fontSize: '22px' }}></i>
+                                    <div className="why-choose-card-icon" style={{ width: '54px', height: '54px', minWidth: '54px', borderRadius: '50%', border: '1px solid rgba(211, 47, 47, 0.6)', background: 'rgba(211, 47, 47, 0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                        <i className={`fa-solid ${item.icon}`} style={{ color: '#D32F2F', fontSize: '22px' }}></i>
                                     </div>
-                                    <h3 className="why-choose-card-title" style={{ margin: '0', color: '#111827', fontSize: '16px', fontWeight: '800', lineHeight: '1.2', letterSpacing: '0.3px', textAlign: 'center' }}>
+                                    <h3 className="why-choose-card-title" style={{ margin: '0', color: '#1A1A1A', fontSize: '16px', fontWeight: '800', lineHeight: '1.2', letterSpacing: '0.3px', textAlign: 'center' }}>
                                         {item.title}
                                     </h3>
                                 </div>
@@ -335,11 +335,11 @@ const Home = () => {
             </div>
 
             <div className="consultation-section-modern" style={{ backgroundColor: '#ffffff', paddingTop: '30px', paddingBottom: '20px', marginTop: '0', position: 'relative', overflow: 'hidden' }}>
-                <div className="consultation-pattern" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.03, backgroundImage: 'radial-gradient(circle, #1F2937 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+                <div className="consultation-pattern" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.03, backgroundImage: 'radial-gradient(circle, #3A3A3A 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
                 <div className="wp-block-cover__inner-container container" style={{ position: 'relative', zIndex: 1 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '40px', flexWrap: 'wrap', maxWidth: '1000px', margin: '0 auto', background: 'linear-gradient(135deg, rgba(31, 41, 55, 0.03) 0%, rgba(255, 140, 66, 0.03) 100%)', padding: '40px', borderRadius: '20px', border: '1px solid rgba(31, 41, 55, 0.1)', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '40px', flexWrap: 'wrap', maxWidth: '1000px', margin: '0 auto', background: 'linear-gradient(135deg, rgba(31, 41, 55, 0.03) 0%, rgba(211, 47, 47, 0.03) 100%)', padding: '40px', borderRadius: '20px', border: '1px solid rgba(31, 41, 55, 0.1)', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)' }}>
                         <div style={{ flex: '1 1 auto', display: 'flex', alignItems: 'center', gap: '25px' }}>
-                            <div className="consultation-icon-wrapper" style={{ flex: '0 0 auto', width: '70px', height: '70px', borderRadius: '50%', background: 'linear-gradient(135deg, #1F2937 0%, #111827 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 20px rgba(31, 41, 55, 0.3)' }}>
+                            <div className="consultation-icon-wrapper" style={{ flex: '0 0 auto', width: '70px', height: '70px', borderRadius: '50%', background: 'linear-gradient(135deg, #3A3A3A 0%, #1A1A1A 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 20px rgba(31, 41, 55, 0.3)' }}>
                                 <i className="fa-solid fa-calendar-check" style={{ fontSize: '30px', color: '#fff' }}></i>
                             </div>
                             <div>
@@ -348,7 +348,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div style={{ flex: '0 0 auto' }}>
-                            <Link className="consultation-btn-modern" to="/schedule" style={{ padding: '16px 40px', borderRadius: '50px', fontSize: '15px', fontWeight: '700', whiteSpace: 'nowrap', background: 'linear-gradient(135deg,#FF8C42 100%, #DF7A32 0%)', color: '#fff', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '10px', boxShadow: '0 8px 20px rgba(255, 140, 66, 0.3)', transition: 'all 0.3s ease' }}>Book Now <i className="fa-solid fa-arrow-right"></i></Link>
+                            <Link className="consultation-btn-modern" to="/schedule" style={{ padding: '16px 40px', borderRadius: '50px', fontSize: '15px', fontWeight: '700', whiteSpace: 'nowrap', background: 'linear-gradient(135deg,#D32F2F 100%, #3A3A3A 0%)', color: '#fff', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '10px', boxShadow: '0 8px 20px rgba(211, 47, 47, 0.3)', transition: 'all 0.3s ease' }}>Book Now <i className="fa-solid fa-arrow-right"></i></Link>
                         </div>
                     </div>
                 </div>

@@ -50,7 +50,7 @@ const Blogs = () => {
                                 background: '#fff'
                             }}>
                                 <div style={{ height: '200px', background: '#e9ecef', position: 'relative' }}>
-                                    <div style={{ position: 'absolute', top: '15px', left: '15px', background: '#FF8C42', color: '#fff', padding: '5px 12px', fontSize: '12px', fontWeight: '700', borderRadius: '2px' }}>
+                                    <div style={{ position: 'absolute', top: '15px', left: '15px', background: '#D32F2F', color: '#fff', padding: '5px 12px', fontSize: '12px', fontWeight: '700', borderRadius: '2px' }}>
                                         {post.category}
                                     </div>
                                     <div style={{ display: 'flex', height: '100%', alignItems: 'center', justifyContent: 'center', opacity: 0.1 }}>
@@ -59,8 +59,8 @@ const Blogs = () => {
                                 </div>
                                 <div style={{ padding: '25px' }}>
                                     <div style={{ fontSize: '12px', color: '#999', marginBottom: '10px' }}>{post.date}</div>
-                                    <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#1F2937', marginBottom: '15px', lineHeight: '1.4' }}>{post.title}</h3>
-                                    <Link to={`/blog/${i}`} style={{ color: '#FF8C42', fontWeight: '700', textDecoration: 'underline', fontSize: '14px' }}>Read More</Link>
+                                    <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#3A3A3A', marginBottom: '15px', lineHeight: '1.4' }}>{post.title}</h3>
+                                    <Link to={`/blog/${i}`} style={{ color: '#D32F2F', fontWeight: '700', textDecoration: 'underline', fontSize: '14px' }}>Read More</Link>
                                 </div>
                             </div>
                         ))}

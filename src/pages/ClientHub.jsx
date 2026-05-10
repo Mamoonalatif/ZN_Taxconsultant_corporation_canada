@@ -47,11 +47,11 @@ const ClientHub = () => {
                             padding: '60px 40px',
                             textAlign: 'center',
                             borderRadius: '8px',
-                            borderBottom: '4px solid #FF8C42'
+                            borderBottom: '4px solid #D32F2F'
                         }}>
                             <p style={{ fontSize: '20px', marginBottom: '25px', color: '#333' }}><strong>Login to access the Client Portal:</strong></p>
                             <a href="#" target="_blank" rel="noreferrer noopener" className="btn-resource" style={{
-                                background: '#FF8C42',
+                                background: '#D32F2F',
                                 color: '#fff',
                                 padding: '15px 40px',
                                 borderRadius: '50px',
@@ -67,11 +67,11 @@ const ClientHub = () => {
                             padding: '60px 40px',
                             textAlign: 'center',
                             borderRadius: '8px',
-                            borderBottom: '4px solid #1F2937'
+                            borderBottom: '4px solid #3A3A3A'
                         }}>
                             <p style={{ fontSize: '20px', marginBottom: '25px', color: '#333' }}><strong>Online QuickBooks Login:</strong></p>
                             <a href="https://qbo.intuit.com" target="_blank" rel="noreferrer noopener" className="btn-resource" style={{
-                                background: '#1F2937',
+                                background: '#3A3A3A',
                                 color: '#fff',
                                 padding: '15px 40px',
                                 borderRadius: '50px',
@@ -105,7 +105,7 @@ const ClientHub = () => {
                             { name: 'Videos', icon: 'fa-video' }
                         ].map((item, i) => (
                             <a key={i} href={`#${item.name.toLowerCase().replace(' ', '-')}`} className="help-item" style={{
-                                background: '#1F2937',
+                                background: '#3A3A3A',
                                 padding: '40px 20px',
                                 borderRadius: '8px',
                                 color: '#fff',
@@ -128,7 +128,7 @@ const ClientHub = () => {
                     <h2 className="section-header" style={{ fontSize: '32px', fontWeight: '300', marginBottom: '40px' }}>Get <strong>Started</strong></h2>
                     <div className="wp-block-columns are-vertically-aligned-center" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }}>
                         <div style={{
-                            background: 'linear-gradient(135deg, #1F2937 0%, #2a6a8f 100%)',
+                            background: 'linear-gradient(135deg, #3A3A3A 0%, #2a6a8f 100%)',
                             padding: '60px 40px',
                             borderRadius: '12px',
                             color: '#fff',
@@ -173,11 +173,11 @@ const ClientHub = () => {
                                 background: '#f8f8f8',
                                 padding: '25px',
                                 borderRadius: '8px',
-                                borderLeft: '4px solid #FF8C42',
+                                borderLeft: '4px solid #D32F2F',
                                 marginTop: '30px'
                             }}>
                                 <p style={{ fontSize: '14px', color: '#666', margin: 0, lineHeight: '1.6' }}>
-                                    <strong style={{ color: '#FF8C42' }}>Need Help?</strong> Our support team is always ready to assist you. Contact us anytime if you have questions about using the portal.
+                                    <strong style={{ color: '#D32F2F' }}>Need Help?</strong> Our support team is always ready to assist you. Contact us anytime if you have questions about using the portal.
                                 </p>
                             </div>
                         </div>
@@ -200,7 +200,7 @@ const ClientHub = () => {
                             { name: 'Client Draft Authorization', icon: 'fa-file-pdf' }
                         ].map((form, i) => (
                             <a key={i} href="#" className="btn-resource" style={{
-                                background: '#FF8C42',
+                                background: '#D32F2F',
                                 color: '#fff',
                                 padding: '15px 10px',
                                 textAlign: 'center',
@@ -235,7 +235,7 @@ const ClientHub = () => {
                             { name: 'Mid-Year Business Tune-Up Checklist', icon: 'fa-link' }
                         ].map((guide, i) => (
                             <a key={i} href="#" className="btn-resource" style={{
-                                background: '#FF8C42',
+                                background: '#D32F2F',
                                 color: '#fff',
                                 padding: '15px 10px',
                                 textAlign: 'center',
@@ -271,7 +271,7 @@ const ClientHub = () => {
                             { name: 'Foreign Tax Certification', icon: 'fa-file-pdf' }
                         ].map((q, i) => (
                             <a key={i} href="#" className="btn-resource" style={{
-                                background: '#FF8C42',
+                                background: '#D32F2F',
                                 color: '#fff',
                                 padding: '15px 10px',
                                 textAlign: 'center',
@@ -325,11 +325,11 @@ const ClientHub = () => {
                             <div key={post.id} className="news-card" style={{ display: 'flex', flexDirection: 'column' }}>
                                 <img src={post.image} alt={post.title} style={{ width: '100%', height: '220px', objectFit: 'cover', marginBottom: '20px' }} />
                                 <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '10px', lineHeight: '1.4' }}>
-                                    <a href={post.link} style={{ color: '#FF8C42', textDecoration: 'underline' }}>{post.title}</a>
+                                    <a href={post.link} style={{ color: '#D32F2F', textDecoration: 'underline' }}>{post.title}</a>
                                 </h3>
                                 <p style={{ color: '#888', fontSize: '13px', marginBottom: '15px' }}>{post.date}</p>
                                 <p style={{ fontSize: '14px', color: '#555', lineHeight: '1.6', marginBottom: '15px', flexGrow: 1 }}>{post.excerpt}</p>
-                                <a href={post.link} style={{ color: '#FF8C42', textDecoration: 'underline', fontWeight: '700', fontSize: '14px' }}>Read More</a>
+                                <a href={post.link} style={{ color: '#D32F2F', textDecoration: 'underline', fontWeight: '700', fontSize: '14px' }}>Read More</a>
                             </div>
                         ))}
                     </div>
@@ -368,7 +368,7 @@ const ClientHub = () => {
                                     { name: 'Lancaster', link: '#' }
                                 ].map((office, i) => (
                                     <li key={i} style={{ marginBottom: '8px' }}>
-                                        <a href={office.link} style={{ color: '#FF8C42', textDecoration: 'underline', fontSize: '15px' }}>
+                                        <a href={office.link} style={{ color: '#D32F2F', textDecoration: 'underline', fontSize: '15px' }}>
                                             • Review ZN Tax and Accounting Services in {office.name}
                                         </a>
                                     </li>
@@ -388,17 +388,17 @@ const ClientHub = () => {
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '60px', alignItems: 'end' }}>
                         <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
                             <Link className="wp-block-button__link wp-element-button" to="/find-accountant" style={{
-                                background: '#FF8C42', padding: '15px 30px', fontSize: '14px'
+                                background: '#D32F2F', padding: '15px 30px', fontSize: '14px'
                             }}>
                                 Find An Accountant
                             </Link>
                             <Link className="wp-block-button__link wp-element-button" to="/schedule" style={{
-                                background: '#FF8C42', padding: '15px 30px', fontSize: '14px'
+                                background: '#D32F2F', padding: '15px 30px', fontSize: '14px'
                             }}>
                                 Schedule A Consultation
                             </Link>
                             <Link className="wp-block-button__link wp-element-button" to="/careers" style={{
-                                background: '#FF8C42', padding: '15px 30px', fontSize: '14px'
+                                background: '#D32F2F', padding: '15px 30px', fontSize: '14px'
                             }}>
                                 Join ZN Tax and Accounting Services
                             </Link>
@@ -407,21 +407,21 @@ const ClientHub = () => {
                             <p style={{ fontSize: '14px', fontWeight: '700', color: '#333', marginBottom: '15px' }}>Follow Us on Social:</p>
                             <div style={{ display: 'flex', gap: '15px' }}>
                                 <a href="https://facebook.com" target="_blank" rel="noreferrer" style={{
-                                    background: '#FF8C42', color: '#fff', width: '40px', height: '40px',
+                                    background: '#D32F2F', color: '#fff', width: '40px', height: '40px',
                                     borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
                                     textDecoration: 'none'
                                 }}>
                                     <i className="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="https://linkedin.com" target="_blank" rel="noreferrer" style={{
-                                    background: '#FF8C42', color: '#fff', width: '40px', height: '40px',
+                                    background: '#D32F2F', color: '#fff', width: '40px', height: '40px',
                                     borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
                                     textDecoration: 'none'
                                 }}>
                                     <i className="fab fa-linkedin-in"></i>
                                 </a>
                                 <a href="/coming-soon" style={{
-                                    background: '#FF8C42', color: '#fff', width: '40px', height: '40px',
+                                    background: '#D32F2F', color: '#fff', width: '40px', height: '40px',
                                     borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
                                     textDecoration: 'none'
                                 }}>

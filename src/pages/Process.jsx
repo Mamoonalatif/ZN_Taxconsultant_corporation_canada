@@ -52,7 +52,7 @@ const Process = () => {
                         You'll Never Have to Worry About the Process Being Difficult with ZN Tax and Accounting Services. We Make it Simple for You.
                     </p>
                     <div className="wp-block-buttons" style={{ marginTop: '30px' }}>
-                        <a className="wp-block-button__link wp-element-button" href="/contact" style={{ background: '#FF8C42' }}>
+                        <a className="wp-block-button__link wp-element-button" href="/contact" style={{ background: '#D32F2F' }}>
                             Book A Consultation
                         </a>
                     </div>
@@ -83,10 +83,10 @@ const Process = () => {
                             </h2>
                             <div style={{ fontSize: '15px', color: '#555', lineHeight: '1.8', marginBottom: '30px' }}>
                                 <p style={{ marginBottom: '15px' }}>
-                                    What do you dread most about starting any new service? It's got to be the beginning, right? Change is hard—we understand—but we make the <Link to="/acquisitions" style={{ color: '#FF8C42', textDecoration: 'underline' }}>shift to a new fractional accounting service</Link> as easy as can be.
+                                    What do you dread most about starting any new service? It's got to be the beginning, right? Change is hard—we understand—but we make the <Link to="/acquisitions" style={{ color: '#D32F2F', textDecoration: 'underline' }}>shift to a new fractional accounting service</Link> as easy as can be.
                                 </p>
                             </div>
-                            <a className="wp-block-button__link wp-element-button" href="/contact" style={{ background: '#FF8C42' }}>
+                            <a className="wp-block-button__link wp-element-button" href="/contact" style={{ background: '#D32F2F' }}>
                                 Contact ZN Tax and Accounting Services
                             </a>
                         </div>
@@ -141,7 +141,7 @@ const Process = () => {
                             </p>
                         </div>
                         <a className="wp-block-button__link wp-element-button" href="/schedule" style={{
-                            background: '#FF8C42',
+                            background: '#D32F2F',
                             padding: '15px 45px',
                             fontSize: '16px'
                         }}>

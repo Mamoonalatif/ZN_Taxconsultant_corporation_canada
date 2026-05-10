@@ -69,7 +69,7 @@ const WhyChoose = () => {
                                 key={i}
                                 className="why-choose-card"
                                 style={{
-                                    color: '#1f2937',
+                                    color: '#3A3A3A',
                                     background: '#f8fafc',
                                     border: '1px solid #e5e7eb',
                                     borderRadius: '14px',
@@ -85,21 +85,21 @@ const WhyChoose = () => {
                                             height: '54px',
                                             minWidth: '54px',
                                             borderRadius: '50%',
-                                            border: '1px solid rgba(255, 140, 66, 0.6)',
-                                            background: 'rgba(255, 140, 66, 0.12)',
+                                            border: '1px solid rgba(211, 47, 47, 0.6)',
+                                            background: 'rgba(211, 47, 47, 0.12)',
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center'
                                         }}
                                     >
-                                        <i className={`fa-solid ${item.icon}`} style={{ color: '#FF8C42', fontSize: '22px' }}></i>
+                                        <i className={`fa-solid ${item.icon}`} style={{ color: '#D32F2F', fontSize: '22px' }}></i>
                                     </div>
 
                                     <h2
                                         className="why-choose-card-title"
                                         style={{
                                             margin: '0',
-                                            color: '#111827',
+                                            color: '#1A1A1A',
                                             fontSize: '16px',
                                             fontWeight: '800',
                                             lineHeight: '1.2',

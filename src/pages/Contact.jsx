@@ -104,7 +104,7 @@ const Contact = () => {
                             <img src={logoImg} alt="ZN Tax and Accounting Services Logo" className="sidebar-logo" />
 
                             <div style={{ fontSize: '14px', color: '#4b5563', margin: '8px 0 0', lineHeight: '1.7' }}>
-                                <strong style={{ color: '#111827' }}>Our Office</strong><br />
+                                <strong style={{ color: '#1A1A1A' }}>Our Office</strong><br />
                                 1940 Bur Oak Avenue,<br />
                                 Markham, Ontario,<br />
                                 L6E 1W9
