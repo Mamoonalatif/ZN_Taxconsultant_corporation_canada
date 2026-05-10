@@ -581,9 +581,10 @@ ul.menu li a:hover {
   top: 0;
   left: 0;
   right: 0;
-  background: #ffffff;
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+  background: #f4f4f4 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
 }
+
 
 #header-shell.home-nav-overlay::before {
   content: '';
@@ -8317,11 +8318,16 @@ ul.footer-menu-underlined li:before {
 
 @media (max-width: 1024px) {
 
-  #header-shell,
+  #header-shell {
+    background: #f4f4f4 !important;
+  }
+
   #header-shell.home-nav-overlay {
     background: #3A3A3A !important;
     backdrop-filter: none;
   }
+
+
 
   #header-shell>.header-grid {
     grid-template-columns: 1fr;
@@ -8409,8 +8415,11 @@ ul.footer-menu-underlined li:before {
 }
 
 #header-shell.interior-nav {
-  background: #3A3A3A !important;
+  background: #f4f4f4 !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
 }
+
+
 
 #header-shell>.header-grid {
   grid-template-columns: 240px 1fr !important;
@@ -8456,8 +8465,10 @@ ul.footer-menu-underlined li:before {
 
 #header-shell.interior-nav ul.menu li a,
 #header-shell.interior-nav ul.menu li.has-children>a:after {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
+
+
 
 #header-shell ul.menu li a:hover,
 #header-shell ul.menu li a.active,
@@ -8478,15 +8489,16 @@ ul.footer-menu-underlined li:before {
   }
 }
 
-/* Non-homepage navbar color update: blue background with white text */
+/* Non-homepage navbar color update */
 #header-shell.interior-nav {
-  background: #3A3A3A !important;
+  background: #f4f4f4 !important;
 }
 
 #header-shell.interior-nav ul.menu li a,
 #header-shell.interior-nav ul.menu li.has-children>a:after {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
+
 
 /* Final consistency pass: keep homepage grey/black translucent shadow and rounded key CTAs */
 #header-shell.home-nav-overlay::before {
@@ -8498,7 +8510,7 @@ ul.footer-menu-underlined li:before {
 }
 
 #header-shell.interior-nav {
-  background: #3A3A3A !important;
+  background: #f4f4f4 !important;
 }
 
 #header-shell ul.menu li.nav-cta-item a,
@@ -8523,14 +8535,14 @@ ul.top-menu li.top-cta-item a {
   transform: translateY(-12px);
 }
 
-/* Final requested navbar fix: non-home pages use #3A3A3A and dropdown items stay black */
+/* Final requested navbar fix: interior pages use light grey and black links */
 #header-shell.interior-nav {
-  background: #3A3A3A !important;
+  background: #f4f4f4 !important;
 }
 
 #header-shell.interior-nav ul.menu li a,
 #header-shell.interior-nav ul.menu li.has-children>a:after {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 #header-shell.interior-nav ul.menu li ul,
@@ -8538,8 +8550,9 @@ ul.top-menu li.top-cta-item a {
 #header-shell.interior-nav ul.menu li ul li a,
 #header-shell.interior-nav ul.menu li ul li a:visited {
   background: #ffffff !important;
-  color: #111827 !important;
+  color: #000000 !important;
 }
+
 
 #header-shell.interior-nav ul.menu li ul li a i,
 #header-shell.interior-nav ul.menu li ul li a svg,
@@ -8805,15 +8818,16 @@ p {
   }
 }
 
-/* Final consistency: fix navbar on non-home pages and match footer color */
+
 #header-shell.interior-nav {
   position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
   z-index: 85;
-  background: #3A3A3A !important;
+  background: #f4f4f4 !important;
 }
+
 
 #footer-wrapper,
 #footer {
