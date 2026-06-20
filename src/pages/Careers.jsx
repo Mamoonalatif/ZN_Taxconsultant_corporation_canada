@@ -114,7 +114,7 @@ const Careers = () => {
 
 
             {/* Benefits & Locations Section */}
-            <div className="wp-block-cover alignfull is-light" style={{ backgroundColor: '#eeeeee', padding: '20px 0' }}>
+            <div className="wp-block-cover alignfull is-light" style={{ backgroundColor: '#f5f7f8', padding: '20px 0' }}>
                 <div className="wp-block-cover__inner-container container">
                     <div className="wp-block-columns are-vertically-aligned-center benefits-location-columns" style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
                         <div className="wp-block-column" style={{ flex: '1 1 450px' }}>
@@ -135,8 +135,8 @@ const Careers = () => {
                                         'Competitive Salary',
                                         'Fun Culture'
                                     ].map((benefit, idx) => (
-                                        <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', color: '#333', fontSize: '12px', lineHeight: '1.4' }}>
-                                            <i className="fa-solid fa-check" style={{ color: '#E57373', marginRight: '8px', marginTop: '3px', fontSize: '12px' }}></i>
+                                        <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', color: '#D32F2F', fontSize: '13px', lineHeight: '1.4', fontWeight: '700' }}>
+                                            <i className="fa-solid fa-check" style={{ color: '#D32F2F', marginRight: '8px', marginTop: '3px', fontSize: '13px' }}></i>
                                             {benefit}
                                         </li>
                                     ))}
@@ -227,7 +227,7 @@ const Careers = () => {
 
 
             {/* SERVICES DELIVERED (Grid matching homepage) */}
-            <div className="wp-block-cover alignfull has-parallax" style={{ color: '#fff', backgroundColor: '#3A3A3A', paddingTop: '60px', paddingBottom: '60px' }}>
+            <div className="wp-block-cover alignfull has-parallax" style={{ color: '#fff', backgroundColor: '#555555', paddingTop: '60px', paddingBottom: '60px' }}>
                 <div className="container">
                     <h2 className="text-center" style={{ fontSize: '32px', marginBottom: '10px', color: '#fff', fontWeight: '700' }}>The Services <strong>We Deliver</strong></h2>
                     <p className="text-center" style={{ marginBottom: '40px', fontSize: '16px', opacity: 0.9 }}>Our clients receive a full range of services from our accounting professionals:</p>

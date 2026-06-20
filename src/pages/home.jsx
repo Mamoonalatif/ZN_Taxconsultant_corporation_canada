@@ -5,6 +5,7 @@ import GoogleReviews from '../components/GoogleReviews';
 // Import images
 import heroImg from '../assets/images/hero.jpg';
 import zulqarnainImage from '../assets/images/zulqarnainnasir.jpeg';
+import usmanImage from '../assets/images/usman.jpeg';
 
 const Home = () => {
     const profileRefs = useRef([]);
@@ -34,7 +35,7 @@ const Home = () => {
             title: 'Principal Accountant, CEO',
             focus: 'Partner',
             bio: 'Zulqarnain leads ZN Tax and Accounting Services Professional Corporation with a commitment to integrity and strategic excellence. He specializes in complex tax planning for SMEs and professional corporations of doctors and dentists.',
-            avatarIcon: 'fa-user-tie',
+            image: zulqarnainImage,
             imageAlt: 'Zulqarnain Naseer',
             expertise: [
                 { icon: 'fa-chart-line', label: 'Tax Strategy' },
@@ -48,7 +49,7 @@ const Home = () => {
             title: 'Compliance and Financial Control Manager',
             focus: 'Manager',
             bio: 'Usman is a senior financial professional with extensive experience in banking, treasury management, and accounting. He works closely with businesses to deliver trusted advisory, audit, and accounting services tailored to their specific needs.',
-            image: zulqarnainImage,
+            image: usmanImage,
             imageAlt: 'Usman Yousaf',
             expertise: [
                 { icon: 'fa-money-bill-trend-up', label: 'Cash Flow Management' },
@@ -244,7 +245,7 @@ const Home = () => {
                 <div className="leadership-shape"></div>
                 <div className="container">
                     <div className="text-center leadership-section-heading" style={{ marginBottom: '24px', position: 'relative', zIndex: 1 }}>
-                        <h2 className="wp-block-heading" style={{ fontSize: '28px', fontWeight: '400', color: '#000', marginTop: '0', marginBottom: '8px' }}>Our Leadership</h2>
+                        <h2 className="wp-block-heading" style={{ fontSize: '28px', fontWeight: '700', color: '#000', marginTop: '0', marginBottom: '8px' }}>Our Leadership</h2>
                     </div>
 
                     <div className="leadership-stack">
@@ -285,7 +286,7 @@ const Home = () => {
             </div>
 
             {/* SECTION 3: Why Choose */}
-            <div className="section-padding" style={{ backgroundColor: '#ffffff', padding: '70px 0 70px' }}>
+            <div className="section-padding" style={{ backgroundColor: '#ffffff', padding: '50px 0 50px' }}>
                 <div className="container" style={{ maxWidth: '1250px' }}>
                     <div style={{ marginBottom: '30px', textAlign: 'center' }}>
                         <h2 className="wp-block-heading" style={{ margin: '0', fontSize: '28px', fontWeight: '500', color: '#1A1A1A' }}>

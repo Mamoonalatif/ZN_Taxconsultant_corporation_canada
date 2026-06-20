@@ -71,7 +71,7 @@ const TaxPreparation = () => {
             </div>
 
             {/* SECTION 1: Eliminate Surprises (Overlapping Layout) */}
-            <div className="section-padding bg-white" style={{ position: 'relative', overflow: 'hidden', paddingTop: '80px', paddingBottom: '80px' }}>
+            <div className="section-padding bg-white" style={{ position: 'relative', overflow: 'hidden', paddingTop: '55px', paddingBottom: '55px' }}>
                 <div className="container">
                     <div style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
                         {/* Image Column */}
@@ -102,7 +102,7 @@ const TaxPreparation = () => {
             </div>
 
             {/* SECTION 2: What to Expect & More About Tax Planning */}
-            <div className="section-padding" style={{ backgroundColor: '#eeeeee' }}>
+            <div className="section-padding" style={{ backgroundColor: '#f5f7f8' }}>
                 <div className="container">
                     <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)', gap: '60px', alignItems: 'start' }}>
                         {/* Left Column: Expectation Card */}
@@ -133,8 +133,8 @@ const TaxPreparation = () => {
                                     'Review Past Returns',
                                     'Provide Tax Planning Services'
                                 ].map((benefit, i) => (
-                                    <li key={i} style={{ marginBottom: '12px', fontSize: '13px', color: '#444', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                        <span style={{ color: '#28a745', fontWeight: 'bold' }}>✓</span> {benefit}
+                                    <li key={i} style={{ marginBottom: '12px', fontSize: '13px', color: '#D32F2F', display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '700' }}>
+                                        <span style={{ color: '#D32F2F', fontWeight: 'bold' }}>✓</span> {benefit}
                                     </li>
                                 ))}
                             </ul>
@@ -167,7 +167,7 @@ const TaxPreparation = () => {
                                         'Tax Treaty Planning',
                                         'Succession Planning'
                                     ].map((item, i) => (
-                                        <li key={i} style={{ marginBottom: '10px', fontSize: '13px', color: '#444', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                        <li key={i} style={{ marginBottom: '10px', fontSize: '13px', color: '#D32F2F', display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '700' }}>
                                             <span style={{ color: '#D32F2F' }}>•</span> {item}
                                         </li>
                                     ))}
@@ -182,7 +182,7 @@ const TaxPreparation = () => {
                                         'Transaction Structuring',
                                         'Tax Reform Impact Analysis'
                                     ].map((item, i) => (
-                                        <li key={i} style={{ marginBottom: '10px', fontSize: '13px', color: '#444', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                        <li key={i} style={{ marginBottom: '10px', fontSize: '13px', color: '#D32F2F', display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '700' }}>
                                             <span style={{ color: '#D32F2F' }}>•</span> {item}
                                         </li>
                                     ))}
@@ -248,22 +248,23 @@ const TaxPreparation = () => {
                 </div>
             </div>
 
-            {/* SECTION 4: Much More (Blue Parallax) */}
+            {/* SECTION 4: Much More */}
             <div className="section-padding" style={{
                 position: 'relative',
-                backgroundColor: '#3A3A3A',
-                color: '#fff',
-                textAlign: 'center'
+                backgroundColor: '#eeeeee',
+                color: '#333',
+                textAlign: 'center',
+                padding: '55px 0'
             }}>
-                <div className="container">
-                    <h2 style={{ fontSize: '32px', fontWeight: '300', marginBottom: '15px', color: '#fff' }}>
+                <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+                    <h2 style={{ textAlign: 'center', fontSize: '32px', fontWeight: '700', marginBottom: '20px', color: '#000' }}>
                         Tax Preparation Services, Tax Planning Services—<strong>and Much More</strong>
                     </h2>
-                    <p style={{ fontSize: '14px', marginBottom: '50px', opacity: 0.9 }}>
+                    <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 50px', fontSize: '16px', color: '#555' }}>
                         At ZN Tax and Accounting Services, we also offer these services to our clients:
                     </p>
 
-                    <div className="service-grid-v2 center-last-item" style={{ marginTop: '40px' }}>
+                    <div className="service-grid-v2 center-last-item" style={{ marginTop: '10px', marginBottom: '40px' }}>
                         {[
                             { title: 'Bookkeeping', icon: 'fa-book-bookmark', link: '/bookkeeping' },
                             { title: 'Tax Prep & Planning', icon: 'fa-file-invoice-dollar', link: '/tax' },
@@ -286,17 +287,13 @@ const TaxPreparation = () => {
                         ))}
                     </div>
 
-                    <p style={{ fontSize: '14px', marginBottom: '30px', marginTop: '30px', opacity: 0.9, maxWidth: '800px', margin: '0 auto 30px auto' }}>
-                        Find the services you need, provided by people who want to see your business succeed. <span style={{ color: '#fff', fontWeight: 'bold', textDecoration: 'underline' }}>The ZN Tax and Accounting Services team</span> is waiting to hear from you.
+                    <p style={{ textAlign: 'center', fontSize: '15px', marginBottom: '30px', color: '#555' }}>
+                        Find the services you need, provided by people who want to see your business succeed. The ZN Tax and Accounting Services team is waiting to hear from you.
                     </p>
 
-                    <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
-                        <Link className="wp-block-button__link wp-element-button" to="/find-accountant" style={{ background: '#D32F2F' }}>
-                            Find An Accountant
-                        </Link>
-                        <Link className="wp-block-button__link wp-element-button" to="/contact" style={{ background: '#D32F2F' }}>
-                            Find A Bookkeeper
-                        </Link>
+                    <div style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
+                        <Link className="wp-block-button__link" to="/find-accountant" style={{ padding: '12px 35px', background: '#D32F2F', borderRadius: '50px', fontWeight: 'bold' }}>Find An Accountant</Link>
+                        <Link className="wp-block-button__link" to="/contact" style={{ padding: '12px 35px', background: '#D32F2F', borderRadius: '50px', fontWeight: 'bold' }}>Find A Bookkeeper</Link>
                     </div>
                 </div>
             </div>

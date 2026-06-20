@@ -7,17 +7,17 @@
   padding: 0;
   --wp--preset--color--black: #000000;
   --wp--preset--color--white: #ffffff;
-  --wp--preset--color--primary: #3A3A3A;
+  --wp--preset--color--primary: #555555;
   --wp--preset--color--secondary: #E57373;
-  --wp--preset--color--dark-gray: #3A3A3A;
+  --wp--preset--color--dark-gray: #555555;
   --wp--preset--color--light-gray: #F3F4F6;
   --zn-red: #D32F2F;
-  --zn-blue: #3A3A3A;
+  --zn-blue: #555555;
   --zn-gray: #6B7280;
   --zn-green: #E57373;
   --zn-orange: #D32F2F;
-  --zn-teal: #3A3A3A;
-  --zn-deep-navy: #3A3A3A;
+  --zn-teal: #555555;
+  --zn-deep-navy: #555555;
   --zn-off-white: #F8FAFC;
 }
 
@@ -131,7 +131,7 @@ img {
 }
 
 .section-padding {
-  padding: 80px 0;
+  padding: 55px 0;
 }
 
 .bg-light {
@@ -581,8 +581,9 @@ ul.menu li a:hover {
   top: 0;
   left: 0;
   right: 0;
-  background: #f4f4f4 !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+  background: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10) !important;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 
@@ -2274,6 +2275,21 @@ a[href*="explore"]:hover,
 /* ==========================================================================
    9. CUSTOM THEME STYLES
    ========================================================================== */
+/* Unify heading spacing and reduce margins below headings in all page sections */
+.section-padding h2,
+.service-page h2,
+.bookkeeping-section h2,
+.manager-section h2,
+.reasons-section h2,
+.other-locations-section h2,
+.find-accountant-content h2,
+.quickbooks-page h2,
+.career-section h2,
+.wp-block-heading {
+  margin-top: 0 !important;
+  margin-bottom: 15px !important;
+}
+
 h1 {
   font-size: 16px;
   font-weight: 700;
@@ -2535,9 +2551,9 @@ h2 {
 #footer-wrapper {
   height: auto;
   width: 100%;
-  background: #3A3A3A;
+  background: #f5f7f8;
   border-top: 8px solid #D32F2F;
-  color: #ffffff;
+  color: #1a1a1a;
   font-family: "Raleway", sans-serif;
   margin-top: 0;
   padding: 60px 40px 0 40px;
@@ -2552,9 +2568,11 @@ h2 {
 /* General footer link styling */
 #footer a {
   text-decoration: none !important;
+  color: #333333;
 }
 
 #footer a:hover {
+  color: #D32F2F !important;
   text-decoration: none !important;
   border-bottom: 2px solid #D32F2F;
   padding-bottom: 2px;
@@ -2579,10 +2597,13 @@ h2 {
 #footer-logo img {
   max-width: 180px;
   height: auto;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
 }
 
 .footer-description {
-  color: #d2d4d5;
+  color: #555555;
   font-size: 13px;
   line-height: 20px;
   margin-bottom: 25px;
@@ -2600,20 +2621,20 @@ h2 {
 }
 
 .contact-item i {
-  color: #aeb1b2;
+  color: #D32F2F !important;
   font-size: 14px;
   margin-right: 10px;
   width: 18px;
 }
 
 .contact-item a {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none !important;
   transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-  color: #d2d4d5;
+  color: #D32F2F !important;
   text-decoration: none !important;
   border-bottom: 2px solid #D32F2F;
   padding-bottom: 1px;
@@ -2661,7 +2682,7 @@ ul.social-icons a i {
 }
 
 .footer-heading {
-  color: #fff;
+  color: #000000 !important;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -2688,19 +2709,19 @@ ul.footer-menu li:before {
   content: '\203A';
   position: absolute;
   left: 0;
-  color: #aeb1b2;
+  color: #D32F2F !important;
   font-size: 9px;
   top: 10px;
 }
 
 ul.footer-menu li a {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none !important;
   transition: color 0.3s ease;
 }
 
 ul.footer-menu li a:hover {
-  color: #d2d4d5;
+  color: #D32F2F !important;
   text-decoration: none !important;
   border-bottom: 2px solid #D32F2F;
   padding-bottom: 1px;
@@ -2708,7 +2729,7 @@ ul.footer-menu li a:hover {
 
 /* Underlined footer menu items (for Accounting Services, etc.) */
 ul.footer-menu-underlined li {
-  border-bottom: 1px solid #838687;
+  border-bottom: 1px solid #e2e8f0;
   padding: 10px 0 10px 18px;
   margin-bottom: 0;
 }
@@ -2838,13 +2859,13 @@ ul.copyright-menu li {
 ul.copyright-menu li a {
   font-size: 14px;
   font-weight: 600;
-  color: #ffffff;
+  color: #333333;
   text-decoration: none !important;
   transition: color 0.3s ease;
 }
 
 ul.copyright-menu li a:hover {
-  color: #d2d4d5;
+  color: #D32F2F !important;
   text-decoration: none !important;
   border-bottom: 2px solid #D32F2F;
   padding-bottom: 2px;
@@ -2852,8 +2873,8 @@ ul.copyright-menu li a:hover {
 
 /* Copyright Wrapper */
 #copyright-wrapper {
-  background: #3A3A3A;
-  border-top: 1px solid #2a3d52;
+  background: #f5f7f8;
+  border-top: 1px solid #e2e8f0;
   margin-top: 0;
   padding-bottom: 0;
 }
@@ -2866,7 +2887,7 @@ ul.copyright-menu li a:hover {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  color: #d2d4d5;
+  color: #555555;
   font-size: 13px;
 }
 
@@ -2880,8 +2901,9 @@ ul.copyright-menu li a:hover {
 
 .copyright-left a,
 .copyright-right a {
-  color: #ffffff;
+  color: #D32F2F !important;
   text-decoration: none !important;
+  font-weight: 600;
 }
 
 .copyright-left a:hover,
@@ -2999,7 +3021,7 @@ ul.copyright-menu li a:hover {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    color: #fff;
+    color: #000000 !important;
     font-weight: 700;
     margin-bottom: 8px;
     user-select: none;
@@ -3171,7 +3193,7 @@ ul.copyright-menu li a:hover {
   .footer-dropdown-btn {
     background: none;
     border: none;
-    color: #fff;
+    color: #000000 !important;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 15px;
@@ -8082,7 +8104,7 @@ h3 strong,
 ul.footer-menu li,
 ul.footer-menu-underlined li,
 ul.copyright-menu li {
-  border-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
 }
 
 ul.footer-menu li:before,
@@ -8831,7 +8853,7 @@ p {
 
 #footer-wrapper,
 #footer {
-  background: #3A3A3A !important;
+  background: #f5f7f8 !important;
 }
 
 /* Remove thin separator line above footer on pages with/without reviews */
@@ -9369,13 +9391,24 @@ body.interior-page {
   background-attachment: fixed;
 }
 
+/* Bookkeeping section text is black on light grey background */
 .bookkeeping-services-section h2,
 .bookkeeping-services-section h3,
 .bookkeeping-services-section h4,
 .bookkeeping-services-section p,
-.bookkeeping-services-section li,
 .bookkeeping-services-section strong,
-.bookkeeping-services-section span,
+.bookkeeping-services-section span {
+  color: #000000 !important;
+}
+
+/* Bookkeeping checklist items are bold red */
+.bookkeeping-services-section li,
+.bookkeeping-services-section li span {
+  color: #D32F2F !important;
+  font-weight: 700 !important;
+}
+
+/* Location services detailed section remains white on dark background */
 .location-services-detailed h2,
 .location-services-detailed h3,
 .location-services-detailed h4,
@@ -9393,7 +9426,14 @@ body.interior-page {
   color: #D32F2F !important;
 }
 
-.bookkeeping-services-section .process-floating-card,
+/* Process floating card styles */
+.bookkeeping-services-section .process-floating-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05) !important;
+}
+
 .location-services-detailed .services-left-card,
 .location-services-detailed .services-right-info,
 .location-services-detailed .location-inline-cta {
@@ -10240,10 +10280,19 @@ body.interior-page {
 /* Mobile & Tablet Specific Fixes */
 @media (max-width: 1024px) {
 
-  /* 1. Hamburger menu orange color */
-  #header-shell .hamburger-menu span,
-  .hamburger-menu span {
+  /* 1. Hamburger menu color based on nav context */
+  #header-shell.home-nav-overlay .hamburger-menu span,
+  #header-shell.home-nav-overlay.is-scrolled .hamburger-menu span {
     background-color: #D32F2F !important;
+    display: block !important;
+    height: 3px !important;
+    width: 30px !important;
+    visibility: visible !important;
+  }
+  
+  #header-shell.interior-nav .hamburger-menu span,
+  .hamburger-menu span {
+    background-color: #333333 !important;
     display: block !important;
     height: 3px !important;
     width: 30px !important;
@@ -10532,4 +10581,63 @@ footer,
     overflow: hidden !important;
     box-sizing: border-box !important;
   }
+}
+
+/* ==========================================================================
+   GLOBAL ACCESSIBILITY & CONTRAST FIXES (Issues 10.1, 10.2, 10.3)
+   ========================================================================== */
+
+/* Ensure dark sections (dark grey / navy backgrounds) use readable link colors */
+[style*="backgroundColor: '#3A3A3A'"] a,
+[style*="backgroundColor: '#2d3142'"] a,
+[style*="background-color: #3A3A3A"] a,
+[style*="background-color: #2d3142"] a {
+  color: #ff8a80 !important;
+}
+
+/* Interior page top padding to prevent content being hidden under fixed header */
+.service-page,
+.find-accountant-page,
+.why-choose-page,
+.our-people-page,
+.testimonials-page,
+.careers-page,
+.contact-page,
+.schedule-page,
+.resources-page,
+.privacy-policy-page,
+.coming-soon-page,
+.not-found-page {
+  padding-top: 0;
+}
+
+/* Fix: pages using contact-hero or careers-hero already have padding built-in,
+   but pages with a floating fixed header need the HERO section to have enough top padding. */
+.find-accountant-page > .contact-hero,
+.schedule-page > .contact-hero,
+.contact-page > .contact-hero {
+  padding-top: 100px !important;
+}
+
+.why-choose-page > .wp-block-cover.alignfull.is-light,
+.our-people-page > .wp-block-cover.alignfull.is-light,
+.testimonials-page > .wp-block-cover.alignfull.is-light {
+  padding-top: 100px !important;
+}
+
+/* Logo readability: On white interior nav, ensure logo PNG is visible */
+#header-shell.interior-nav #logo img {
+  filter: none;
+  mix-blend-mode: normal;
+}
+
+/* Bookkeeping hero section: add top padding for fixed header */
+.service-page > .wp-block-cover.careers-hero:first-child,
+.service-page > div:first-child.wp-block-cover {
+  padding-top: 100px !important;
+}
+
+/* page-responsive-padding used in some service pages */
+.page-responsive-padding {
+  padding-top: 100px !important;
 }

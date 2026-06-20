@@ -104,7 +104,7 @@ const Consulting = () => {
             </div>
 
             {/* SECTION 2: Get These Services */}
-            <div className="section-padding bg-light" style={{ padding: '60px 0', backgroundColor: '#f9f9f9' }}>
+            <div className="section-padding bg-light" style={{ padding: '55px 0', backgroundColor: '#f5f7f8' }}>
                 <div className="container">
                     <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.2fr) minmax(0, 1fr)', gap: '60px', alignItems: 'start' }}>
                         <div>
@@ -125,7 +125,7 @@ const Consulting = () => {
                                     'Evaluate Succession Planning Options',
                                     'Help to Develop an Exit Strategy'
                                 ].map((service, i) => (
-                                    <li key={i} style={{ marginBottom: '12px', paddingLeft: '25px', position: 'relative', fontSize: '15.5px', color: '#444' }}>
+                                    <li key={i} style={{ marginBottom: '12px', paddingLeft: '25px', position: 'relative', fontSize: '15.5px', color: '#D32F2F', fontWeight: '700' }}>
                                         <span style={{ position: 'absolute', left: 0, color: '#D32F2F', fontWeight: 'bold' }}>✓</span> {service}
                                     </li>
                                 ))}
@@ -154,16 +154,16 @@ const Consulting = () => {
             {/* NEW SECTION: Services Block */}
             <div className="section-padding" style={{
                 position: 'relative',
-               backgroundColor: '#3A3A3A',
-                color: '#fff',
+                backgroundColor: '#eeeeee',
+                color: '#333',
                 textAlign: 'center',
-                padding: '80px 0'
+                padding: '55px 0'
             }}>
                 <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-                    <h2 style={{ textAlign: 'center', fontSize: '32px', fontWeight: '300', marginBottom: '20px' }}>
+                    <h2 style={{ textAlign: 'center', fontSize: '32px', fontWeight: '700', marginBottom: '20px', color: '#000' }}>
                         <strong>Business Consulting</strong> is Just the Beginning at ZN Tax and Accounting Services
                     </h2>
-                    <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 50px', fontSize: '16px', opacity: 0.9 }}>
+                    <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 50px', fontSize: '16px', color: '#555' }}>
                         You know that we offer comprehensive, customizable consulting services for small businesses. But did you also know that we offer a variety of accounting services as well?
                     </p>
 
@@ -190,7 +190,7 @@ const Consulting = () => {
                         ))}
                     </div>
 
-                    <p style={{ textAlign: 'center', fontSize: '15px', marginBottom: '30px' }}>
+                    <p style={{ textAlign: 'center', fontSize: '15px', marginBottom: '30px', color: '#555' }}>
                         Find the services you need, provided by people who want to see your business succeed. The ZN Tax and Accounting Services team is waiting to hear from you.
                     </p>
 

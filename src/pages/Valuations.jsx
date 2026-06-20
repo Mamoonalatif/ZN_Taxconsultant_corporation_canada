@@ -218,7 +218,7 @@ const Valuations = () => {
             {/* SECTION 5: Blue Parallax (Much More) */}
             <div className="wp-block-cover alignfull has-parallax" style={{ color: '#fff', padding: '80px 0' }}>
                 <div className="wp-block-cover__image-background has-parallax" style={{ backgroundImage: `url(${whiteBg})`, backgroundPosition: '50% 50%', filter: 'grayscale(1)' }}></div>
-                <span aria-hidden="true" className="wp-block-cover__background" style={{ backgroundColor: '#3A3A3A', opacity: 0.9, zIndex: 1 }}></span>
+                <span aria-hidden="true" className="wp-block-cover__background" style={{ backgroundColor: '#555555', opacity: 0.9, zIndex: 1 }}></span>
                 <div className="container" style={{ position: 'relative', zIndex: 2 }}>
                     <h2 style={{ textAlign: 'center', fontSize: '32px', fontWeight: '300', marginBottom: '20px' }}>
                         ZN Tax and Accounting Services Offers <strong>Business Valuation Services</strong> and Much More

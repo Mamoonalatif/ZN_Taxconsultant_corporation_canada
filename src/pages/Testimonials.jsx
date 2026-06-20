@@ -35,7 +35,7 @@ const Testimonials = () => {
                 </div>
             </div>
 
-            <GoogleReviews />
+            <GoogleReviews showDetailed={true} />
         </div>
     );
 };
